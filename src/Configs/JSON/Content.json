@@ -1,0 +1,88 @@
+{
+	"Home": {
+		"MainText1": "Hi, I am Geetanjali Sharma",
+        "MainText2": "A Software Developer",
+        "MainText3": "Geetanjali Sharma" 
+    },
+	"About": {
+        "Title": "About",
+		"Text": "I am Geetanjali Sharma, a Software Developer at DePronto Infotech. In my current role, I have gained valuable experience in front-end development, with a focus on technologies such as React.js, JSP, jQuery and various CSS frameworks like (Mui, AntD). My hands-on experience in these technologies has equipped me with the ability to create responsive and user-friendly web applications. I have successfully contributed to the development of innovative solutions that have not only met but exceeded client expectations. I have also been of deployments. I have done 20+ UATs and 5+ Live movements. "
+	},
+	"Experiences": {
+        "Title": "Work Experience",
+        "Company": "DePronto Infotech Ltd.",
+        "Items": [
+            {
+                "Role": "Software Developer",
+                "Years": "[June 2023 - Present]",
+                "Description": "In my current role at Depronto Infotech, I have gained valuable experience in front-end development, with a focus on technologies such as React.js, JSP, and jQuery. My hands-on experience in these technologies has equipped me with the ability to create responsive and user-friendly web applications. I have successfully contributed to the development of innovative solutions that have not only met but exceeded client expectations. I have also been of deployments. I have done 20+ UATs and 5+ Live movements. "
+            },
+            {
+                "Role": "Software Developer Intern",
+                "Years": "[Dec 2022 - May 2023]",
+                "Description": "I have also done my internship in DePronto itself, as a part a R&D team there I was the one handling the front-end part of 3 Projects at a time which made me recognize my multi-tasking skills. Gained proficiency in front-end development, best practices, and version control using Git."
+            }
+        ]
+    },
+	"Skills": [
+		{
+			"Name": "HTML5",
+			"Level": "90%",
+			"Description": "Proficient in HTML5 programming languages and able to create responsive websites."
+		},
+		{
+			"Name": "CSS",
+			"Level": "60%",
+			"Description": "Proficient in HTML5 programming languages and able to create responsive websites."
+		},
+		{
+			"Name": "JavaScript/JQuery",
+			"Level": "80%",
+			"Description": "Experienced with JavaScript and JQuery, proficient in creating interactive web applications."
+		},
+		{
+			"Name": "ReactJS",
+			"Level": "70%",
+			"Description": "Experienced in building user interfaces using ReactJS library for web applications."
+		},
+		{
+			"Name": "C++",
+			"Level": "40%",
+			"Description": "Familiar with Object Oriented Programming and Algorithms."
+		},
+		{
+			"Name": "Python",
+			"Level": "60%",
+			"Description": "Knowledgeable in Data Structures and Algorithms."
+		},
+		{
+			"Name": "TypeScript",
+			"Level": "30%",
+			"Description": "Learning the basics of TypeScript for building robust applications."
+		}
+	],
+
+	"Education": {
+		"Graduation": {
+			"College": "ABES Engineering College, Ghaziabad",
+			"Degree": "Bachelor of Technology (Computer Engineering)",
+			"Year": "2019 - 2023",
+			"CGPA": "8.47/10.0"
+		},
+		"School": [
+			{
+				"Institution": "Shree ThakurDwara Balika Vidyalaya",
+				"Degree": "Class 12 - CBSE Board",
+				"Year": "2019",
+				"Grade": " Percentage : 91.4%"
+			},
+			{
+				"Institution": "Shree ThakurDwara Balika Vidyalaya",
+				"Degree": "Class 10 - CBSE Board",
+				"Year": "2017",
+				"Grade": "CGPA : 10.0"
+			}
+		]
+	},
+	"Projects": {}
+}

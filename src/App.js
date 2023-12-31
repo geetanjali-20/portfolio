@@ -1,12 +1,15 @@
 import { Suspense } from "react";
 import "./App.less";
-import Home from "./Components";
+import {Home, About} from "./Components";
 
 function App() {
 	return (
 		<div className="App">
 			<Suspense fallback={<Loading/>}>
 				<Home/>
+			</Suspense>
+			<Suspense fallback={<Loading/>}>
+				<About/>
 			</Suspense>
 		</div>
 	);
