@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/Home.less";
 import my from "../Assests/my.png";
+import scrollDown from "../Assests/arrow.png"
 import dataJson from "../Configs/JSON/Content.json";
 import Typewriter from "typewriter-effect";
 import { Button } from "@mui/material";
@@ -11,7 +12,7 @@ const Home = () => {
 		// Set a timeout to make the element visible after 3000 milliseconds (3 seconds)
 		const timeoutId = setTimeout(() => {
 			setIsVisible(true);
-		}, 3000);
+		}, 300);
 		return () => clearTimeout(timeoutId);
 	}, []);
 
@@ -19,7 +20,7 @@ const Home = () => {
 		// Toggle the blinking effect every 1 second (1000 milliseconds)
 		const intervalId = setInterval(() => {
 		  setIsBlinking((prevBlinking) => !prevBlinking);
-		}, 300);
+		}, 30000);
 	
 		// Clear the interval when the component is unmounted
 		return () => clearInterval(intervalId);
@@ -49,8 +50,8 @@ const Home = () => {
 						id="scrollId"
 						onClick={() => {window.scrollTo(0, 700);
 							setIsVisible(false);}}
-					>
-						Scroll down to explore more...
+					><img src={scrollDown} className="arrowImage" alt="myImage" /><div>Scroll Down</div>
+						
 					</Button>
 				)}
 			</div>

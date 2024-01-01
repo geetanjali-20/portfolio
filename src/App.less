@@ -1,40 +1,110 @@
+@import "./variables.less";
 .App {
-  text-align: center;
-  overflow-x: hidden;
-  
+	text-align: center;
+	overflow-x: hidden;
+	background-color: #FBFAF5;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.navbar {
+	position: fixed;
+  top: 0;
+	width: 100%;
+	color: #fff;
+	padding: 10px 0;
+	height: 28px;
+	// display: flex;
+	// justify-content: space-between;
+	z-index: 1;
+
+	/* Animations */
+	transition-timing-function: ease-in;
+	transition: all 0.5s ease;
+}
+.navbar_black {
+	background: rgba(255,255,255,0.6);
+}
+
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.logo {
+	color: #fff;
+	font-size: 1.5rem;
+	text-decoration: none;
+	.logoimg {
+		width: 30px;
+		border-radius: 50%;
+	}
+}
+
+.nav-links a {
+	color: #fff;
+	text-decoration: none;
+	margin: 0 15px;
+	font-size: 1rem;
+}
+
+.nav-links a:hover {
+	text-decoration: underline;
+}
+
+.active {
+	text-decoration: underline;
+}
+/* Example styles for the content components */
+.container {
+	max-width: 800px;
+	margin: 50px auto;
+	text-align: center;
+	color: #333;
+}
+.logos {
+	width: 26px;
+	height: 26px;
+}
+.IconLinks {
+	transition: transform 0.3s ease; 
+}
+.IconLinks::hover {
+	transform: scale(1.2);
 }

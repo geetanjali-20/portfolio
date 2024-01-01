@@ -63,6 +63,7 @@
 	],
 
 	"Education": {
+		"Title": "Education",
 		"Graduation": {
 			"College": "ABES Engineering College, Ghaziabad",
 			"Degree": "Bachelor of Technology (Computer Engineering)",

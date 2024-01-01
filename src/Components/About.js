@@ -2,21 +2,32 @@ import React from "react";
 import dataJson from "../Configs/JSON/Content.json";
 import "../Styles/About.less";
 import logo from "../Assests/CompanyLogo.png";
-const about = () => {
-  window.setInterval(function() {
-    var elem = document.getElementById('data');
-    elem.scrollTop = elem.scrollHeight;
-  }, 5000);
+import { motion} from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const About = () => {
+	const [ref, inView] = useInView();
 	return (
 		<>
 			{/* <--   About Section   -->*/}
-			<div className="aboutSection" id="data">
+			<motion.div className="aboutSection"
+			initial= {{scale: 1}}
+			whileHover={{
+				scale: 1.1,
+				transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+			}}>
 				<div className="aboutTitle">{dataJson["About"]["Title"]}</div>
 				<div className="aboutText">{dataJson["About"]["Text"]}</div>
-			</div>
+			</motion.div>
 
 			{/* <--   Work Experience Section   -->*/}
-			<div className="workExperience">
+			<motion.div className="workExperience"
+			
+			initial= {{scale: 1}}
+			whileHover={{
+				scale: 1.1,
+				transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+			}} >
 				<div className="firstSection">
 					<div className="companyName">
 						{dataJson["Experiences"]["Company"]}
@@ -42,9 +53,47 @@ const about = () => {
 					</div>
 					<img src={logo} className="LogoImage" alt="myImage" />
 				</div>
-			</div>
+			</motion.div>
+
+			{/* <--   Education Section   -->*/}
+			<motion.div
+				className="EducationSection"
+				ref={ref}
+				style={{
+					transform: inView ? "none" : "translateX(200px)",
+					opacity: inView ? 1 : 0,
+					transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+				}}
+				whileHover={{
+					scale: 1.1,
+					
+				}}
+			>
+			<div className="firstSection">{dataJson["Education"]["Title"]}</div>
+			<div className="secondSection"></div></motion.div>
+
+			{/* <div className="example">
+				<div>
+					<motion.div
+						className="box"
+						animate={{ x, y, rotate }}
+						transition={{ type: "spring" }}
+					/>
+				</div>
+				<div className="inputs">
+					<Input value={x} set={setX}>
+						x
+					</Input>
+					<Input value={y} set={setY}>
+						y
+					</Input>
+					<Input value={rotate} set={setRotate} min={-180} max={180}>
+						rotate
+					</Input>
+				</div>
+			</div> */}
 		</>
 	);
 };
 
-export default about;
+export default About;

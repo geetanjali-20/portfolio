@@ -2,7 +2,7 @@
 .homeBody {
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to top, #ffffff, #cfcaca);
+	background: linear-gradient(to top, #FBFAF5, #e3e0e0);
 	.centerElements {
 		padding-top: 200px;
 		.myImage {
@@ -18,11 +18,17 @@
 		}
 	}
 	.blinking-button {
-		font-size: 16px;
+		font-size: 12px;
+		color: black;
 		padding: 10px;
 		position: absolute;
 		bottom: 10px; /* Adjust distance from the bottom */
 		right: 15px; /* Adjust distance from the right */
+		display: flex;
+		flex-direction: column;
+		.arrowImage {
+			width: 30px;
+		}
 	}
 
 	@keyframes blinkAnimation {
