@@ -1,64 +1,70 @@
 @import "../variables.less";
-
-
-.aboutSection {
-	display: flex;
-	margin: 0px 15vw;
-	flex-direction: row;
-	gap: 20%;
-	padding: 30px;
-	box-shadow: 5px 5px 10px #787878;
-	border-radius: 8px;
-	background-color: @orange;
-	.aboutTitle {
-		font: normal normal bold 48px/50px "Arial";
-		text-shadow: 2px 2px 4px #616161;
-		margin-top: 50px;
-		margin-left: 50px;
-	}
-	.aboutText {
-		border-left: 1px solid #a8a8a8;
-		font: normal normal 500 16px/20px "Arial";
-		line-height: 1.2;
-		padding-left: 30px;
-		text-align: justify;
-	}
-}
+// .aboutSection {
+// 	display: flex;
+// 	margin: 0px 15vw;
+// 	flex-direction: row;
+// 	gap: 20%;
+// 	padding: 30px;
+// 	margin-top: 50px;
+// 	// box-shadow: 5px 5px 10px #787878;
+// 	border-radius: 8px;
+// 	// background-color: @orange;
+// 	// background-color: #7878782b;
+	
+// 	.aboutTitle {
+// 		font: normal normal normal 44px/50px "Poppins";
+// 		text-shadow: 2px 2px 4px #616161;
+// 		margin-top: 50px;
+// 		margin-left: 50px;
+// 		text-transform: uppercase;
+// 	}
+// 	.aboutText {
+// 		// border-left: 1px solid #a8a8a8;
+// 		font: normal normal 500 16px/20px "Poppins";
+// 		line-height: 1.2;
+// 		padding-left: 60px;
+// 		text-align: justify;
+// 	}
+// }
 .workExperience {
 	margin: 50px 15vw 0px 15vw;
 	display: flex;
 	flex-direction: row;
-	gap: 180px;
+	gap: 130px;
 	padding: 30px;
-	box-shadow: 5px 5px 10px #787878;
+	// box-shadow: 5px 5px 10px #787878;
 	border-radius: 8px;
-	background-color: @blue;
+	// background-color: @blue;
+	// background-color: #7878782b;
 	.firstSection {
 		text-align: left;
 		.companyName {
-			font: normal normal bold 22px/24px "Arial";
+			font: normal normal 500 26px/24px "Poppins";
 			margin-bottom: 8px;
 		}
 		.experiences {
 			display: flex;
 			flex-direction: column;
 			gap: 20px;
-
 			div > ul {
 				margin: 0;
-				padding-left: 20px;
+				padding-left: 0px;
+				li {
+					list-style: none;
+				}
 			}
 			.role {
-				font: normal normal bold 20px/24px "Arial";
+				font: normal normal 500 22px/24px "Poppins";
 				margin: 0;
 				margin-bottom: 4px;
+				text-decoration: underline;
 			}
 			.years {
-				font: normal normal 500 18px/22px "Arial";
-				padding-left: 10px;
+				font: normal normal 400 16px/22px "Poppins";
+				padding-left: 0px;
 			}
 			.desc {
-				font: normal normal normal 14px/18px "Arial";
+				font: normal normal normal 14px/18px "Poppins";
 				opacity: 0.8;
 				text-align: justify;
 				// width: 400px;
@@ -71,51 +77,99 @@
 		margin-right: 40px;
 
 		.titleExperience {
-			font: normal normal bold 48px/50px "Arial";
-			text-shadow: 2px 2px 4px darkgrey;
+			font: normal normal normal 44px/50px "Poppins";
+			text-shadow: 2px 2px 4px #616161;
+			text-transform: uppercase;
 		}
 	}
 }
 .EducationSection {
-	display: flex;
+	// display: flex;
 	margin: 50px 15vw;
 	flex-direction: row;
-	gap: 20%;
+	// gap: 20%;
 	padding: 30px;
 	box-shadow: 5px 5px 10px #787878;
+	background-color: #7878782b;
 	border-radius: 8px;
-	background-color: @green;
+	// background-color: @green;
 	.firstSection {
-		font: normal normal bold 48px/50px "Arial";
+		font: normal normal normal 44px/50px "Poppins";
+		text-transform: uppercase;
 		text-shadow: 2px 2px 4px #616161;
-		margin-top: 50px;
-		margin-left: 50px;
 	}
 	.secondSection {
-		padding-left: 30px;
 		text-align: justify;
 	}
 }
 
 @media screen and (max-width: @mobile_width) {
 	.aboutSection {
-		margin: 50px 20px;
+		display: block;
+		margin: 50px 30px;
 		height: fit-content;
 		.aboutTitle {
 			float: none;
+			margin-top: 0px;
+			margin-left: 0px;
 			display: block;
-			margin-bottom: 15px;
-			text-align: left;
-			font: normal normal bold 38px/40px "Arial";
+			margin-bottom: 20px;
+			text-align: center;
+			font: normal normal normal 38px/40px "Poppins";
 		}
 		.aboutText {
 			float: none;
 			border-left: none;
-			font: normal normal bold 16px/18px "Arial";
+			font: normal normal normal 16px/18px "Poppins";
 			padding-left: 0px;
 			width: auto;
 			text-align: justify;
 			line-height: 1.5;
+		}
+	}
+	.workExperience {
+		margin: 50px 30px;
+		flex-direction: column;
+		gap: 0;
+		.firstSection {
+			text-align: left;
+			order: 2;
+			.companyName {
+				display: none;
+			}
+			.experiences {
+				.role {
+					font: normal normal 500 20px/24px "Poppins";
+					text-decoration: none;
+				}
+				.years {
+					font: normal normal 400 16px/20px "Poppins";
+				}
+				.desc {
+					font: normal normal normal 14px/18px "Poppins";
+					line-height: 1.5;
+				}
+			}
+		}
+		.secondSection {
+			margin-top: 0px;
+			margin-right: 0px;
+			margin-bottom: 20px;
+			order: 1;
+	
+			.titleExperience {
+				font: normal normal normal 38px/40px "Poppins";
+				text-shadow: 2px 2px 4px #616161;
+			}
+		}
+	}
+	.EducationSection {
+		margin: 50px 30px;
+		.firstSection {
+			font: normal normal normal 38px/40px "Poppins";
+		}
+		.secondSection {
+			text-align: justify;
 		}
 	}
 }

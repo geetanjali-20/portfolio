@@ -1,12 +1,29 @@
 {
 	"Home": {
-		"MainText1": "Hi, I am Geetanjali Sharma",
+		"MainText1": "Hey!, I am Geetanjali Sharma",
         "MainText2": "A Software Developer",
-        "MainText3": "Geetanjali Sharma" 
+        "MainText3": "Geetanjali Sharma" ,
+		"Socials":[{
+			"link":"https://www.linkedin.com/in/geetanjali-sharma/01",
+			"alt":"LinkedIn"
+		},{
+			"link":"mailto:geetus2001@gmail.com",
+			"alt":"Gmail"
+		},{
+			"link":"https://github.com/geetanjali-20",
+			"alt":"Github"
+		},{
+			"link":"https://leetcode.com/geetus2001/",
+			"alt":"Leetcode"
+		},
+		{
+			"link":"https://linktr.ee/geetanjali1220",
+			"alt":"Linktree"
+		}]
     },
 	"About": {
         "Title": "About",
-		"Text": "I am Geetanjali Sharma, a Software Developer at DePronto Infotech. In my current role, I have gained valuable experience in front-end development, with a focus on technologies such as React.js, JSP, jQuery and various CSS frameworks like (Mui, AntD). My hands-on experience in these technologies has equipped me with the ability to create responsive and user-friendly web applications. I have successfully contributed to the development of innovative solutions that have not only met but exceeded client expectations. I have also been of deployments. I have done 20+ UATs and 5+ Live movements. "
+		"Text": "I am Geetanjali Sharma, a Software Developer at DePronto Infotech. In my current role, I have gained valuable experience in front-end development, with a focus on technologies such as React.js, JSP, jQuery and various CSS frameworks like (Mui, AntD)."
 	},
 	"Experiences": {
         "Title": "Work Experience",
@@ -64,24 +81,27 @@
 
 	"Education": {
 		"Title": "Education",
-		"Graduation": {
-			"College": "ABES Engineering College, Ghaziabad",
-			"Degree": "Bachelor of Technology (Computer Engineering)",
-			"Year": "2019 - 2023",
-			"CGPA": "8.47/10.0"
-		},
 		"School": [
+			{
+				"Institution": "ABES Engineering College, Ghaziabad",
+				"Degree": "Bachelor of Technology (Computer Engineering)",
+				"Year": "2019 - 2023",
+				"Grades": "8.47",
+				"row": "row-1"
+			},
 			{
 				"Institution": "Shree ThakurDwara Balika Vidyalaya",
 				"Degree": "Class 12 - CBSE Board",
 				"Year": "2019",
-				"Grade": " Percentage : 91.4%"
+				"Grades": "91.4%",
+				"row": "row-2"
 			},
 			{
 				"Institution": "Shree ThakurDwara Balika Vidyalaya",
 				"Degree": "Class 10 - CBSE Board",
 				"Year": "2017",
-				"Grade": "CGPA : 10.0"
+				"Grades": "10.0",
+				"row": "row-1"
 			}
 		]
 	},

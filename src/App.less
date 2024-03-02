@@ -42,15 +42,15 @@
 
 .navbar {
 	position: fixed;
-  top: 0;
+  	top: 0;
 	width: 100%;
 	color: #fff;
-	padding: 10px 0;
-	height: 28px;
-	// display: flex;
-	// justify-content: space-between;
+	background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	padding: 12px 0;
+	height: 36px;
 	z-index: 1;
-
+	box-sizing: unset;
 	/* Animations */
 	transition-timing-function: ease-in;
 	transition: all 0.5s ease;
@@ -64,7 +64,7 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
-	padding: 0 30px;
+	padding: 0 50px;
 }
 
 .logo {
@@ -86,6 +86,7 @@
 
 .nav-links a:hover {
 	text-decoration: underline;
+	
 }
 
 .active {
@@ -102,9 +103,13 @@
 	width: 26px;
 	height: 26px;
 }
-.IconLinks {
-	transition: transform 0.3s ease; 
+.logos:hover{
+	transition: all .4s ease-in-out;
+	scale: 1.4;
 }
-.IconLinks::hover {
-	transform: scale(1.2);
-}
+// .IconLinks {
+// 	transition: transform 0.3s ease; 
+// }
+// .IconLinks::hover {
+// 	transform: scale(1.2);
+// }

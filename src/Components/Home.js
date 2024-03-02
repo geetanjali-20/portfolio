@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/Home.less";
 import my from "../Assests/my.png";
-import scrollDown from "../Assests/arrow.png"
+import scrollDown from "../Assests/arrow.png";
 import dataJson from "../Configs/JSON/Content.json";
 import Typewriter from "typewriter-effect";
+import LinkedIn from "../Assests/LinkedIn.png";
+import Mail from "../Assests/email.png";
+import Linktree from "../Assests/link.png";
+import Github from "../Assests/github.png";
+import Code from "../Assests/code.png";
 import { Button } from "@mui/material";
 const Home = () => {
+	const JsonData = dataJson.Home.Socials;
 	const [isVisible, setIsVisible] = useState(false);
 	const [isBlinking, setIsBlinking] = useState(true);
 	useEffect(() => {
@@ -19,43 +25,81 @@ const Home = () => {
 	useEffect(() => {
 		// Toggle the blinking effect every 1 second (1000 milliseconds)
 		const intervalId = setInterval(() => {
-		  setIsBlinking((prevBlinking) => !prevBlinking);
+			setIsBlinking((prevBlinking) => !prevBlinking);
 		}, 30000);
-	
+
 		// Clear the interval when the component is unmounted
 		return () => clearInterval(intervalId);
-	  }, []);
+	}, []);
+	const data = [LinkedIn, Mail, Github, Code, Linktree];
+
 	return (
-			<div className="homeBody">
-				<div className="centerElements"><img src={my} className="myImage" alt="myImage" />
+		<div className="homeBody">
+			<div className="HomePage">
+			<div className="centerElements">
+				<img src={my} className="myImage" alt="myImage" />
 				<div className="helloText">
 					<Typewriter
 						onInit={(typewriter) => {
 							typewriter
 								.typeString(dataJson["Home"]["MainText1"])
-								.pauseFor(1000)
-								.deleteAll()
-								.typeString(dataJson["Home"]["MainText2"])
-								.pauseFor(1000)
-								.deleteAll()
-								.typeString(dataJson["Home"]["MainText3"])
+								// .pauseFor(1000)
+								// .deleteAll()
+								// .typeString(dataJson["Home"]["MainText2"])
+								// .pauseFor(1000)
+								// .deleteAll()
+								// .typeString(dataJson["Home"]["MainText3"])
 								.start();
 						}}
 					/>
 				</div>
-				</div>
-				{isVisible && (
-					<Button
-						className={`blinking-button ${isBlinking ? 'blink' : ''}`}
-						id="scrollId"
-						onClick={() => {window.scrollTo(0, 700);
-							setIsVisible(false);}}
-					><img src={scrollDown} className="arrowImage" alt="myImage" /><div>Scroll Down</div>
-						
-					</Button>
-				)}
+				<div className="aboutSection">
+				<div className="aboutTitle">{dataJson["About"]["Title"]}</div>
+				<div className="aboutText">{dataJson["About"]["Text"]}</div>
 			</div>
-		
+			</div>
+				{/* <--   About Section   -->*/}
+			{/* <div className="aboutSection">
+				<div className="aboutTitle">{dataJson["About"]["Title"]}</div>
+				<div className="aboutText">{dataJson["About"]["Text"]}</div>
+			</div> */}
+			</div>
+			<div class="homeSocials">
+				{JsonData.map((value, index) => (
+					<div class="social">
+						<a
+							href={value.link}
+							class="social-icon-link"
+							rel="noreferrer"
+							target="_blank"
+						>
+							<img
+								src={data[index]}
+								alt={value.alt}
+								class="social-icon"
+							/>
+						</a>
+					</div>
+				))}
+			</div>
+			{isVisible && (
+				<Button
+					className={`blinking-button ${isBlinking ? "blink" : ""}`}
+					id="scrollId"
+					onClick={() => {
+						window.scrollTo(0, 700);
+						setIsVisible(false);
+					}}
+				>
+					<img
+						src={scrollDown}
+						className="arrowImage"
+						alt="myImage"
+					/>
+					<div>Know More</div>
+				</Button>
+			)}
+		</div>
 	);
 };
 
