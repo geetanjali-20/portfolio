@@ -4,7 +4,7 @@ class AppStore {
    device = 1
 
    constructor () {
-    makeAutoObservable(this)
+      makeAutoObservable(this)
    }
    setDevice = (data) => (this.device = data)
 }

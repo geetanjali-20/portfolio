@@ -1,0 +1,62 @@
+@import "../variables.less";
+// *{
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+.skillsSection {
+	margin: 50px 15vw;
+	// display: flex;
+	align-items: center;
+	// justify-content: center;
+	padding: 30px;
+	// box-shadow: 5px 5px 10px #787878;
+	// background-color: #7878782b;
+	// border-radius: 8px;
+	overflow: none;
+    font-family: "Poppins";
+	
+	.cardsSection {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+		padding: 40px 0px;
+	}
+	.card {
+		background-color: #787878;
+		font: normal normal normal 18px/20px "Poppins";
+		color: #fff;
+		padding: 20px 30px;
+	}
+	.expanded {
+		// opacity: 1;
+		background-color: #6e6b6b;
+		z-index: 4;
+	}
+	.notexpanded {
+		// opacity: 0.5;
+		background-color: #787878;
+	}
+    .expandedHeading {
+		font: normal normal normal 26px/30px "Poppins";
+	}
+	.notexpandedHeading {
+		font: normal normal normal 18px/20px "Poppins";
+		color: rgb(0, 0, 0);
+		opacity: 1;
+	}
+	.card p {
+		padding-top: 1rem;
+		line-height: 150%;
+	}
+	.expand {
+		width: 25rem;
+        .skillSet{
+            font: normal normal normal 16px/20px "Poppins";
+        }
+	}
+}
+
+@media screen and (max-width: @mobile_width) {
+}

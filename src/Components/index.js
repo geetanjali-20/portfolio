@@ -2,6 +2,8 @@ import { lazy } from "react";
 
 const Home = lazy(()=> import("./Home.js"))
 const About = lazy(()=> import("./About.js"))
+const Skills = lazy(()=> import("./Skills.js"))
+const Project = lazy(() => import('./Project.js'))
 const Footer = lazy(()=> import("./Footer.js"))
 
-export {Home,About,Footer}
+export {Home,About,Skills,Project,Footer}

@@ -39,8 +39,8 @@ const Footer = () => {
           <script>
             document.write(new Date().getFullYear());
           </script>2024
-          . Made by 
-          <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/geetanjali-sharma/01">Geetanjali Sharma</a>
+          . Made by&nbsp;
+          <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/geetanjali-sharma/01">Geetanjali Sharma</a>❤️
         </div>
       </div>
     </footer>

@@ -6,7 +6,7 @@ import {
 	Routes,
 	NavLink,
 } from "react-router-dom";
-import { Home, About , Footer} from "./Components";
+import { Home, About , Skills,Project, Footer} from "./Components";
 import logo from "./Assests/Glogo.png";
 import HomeIcon from "./Assests/home.png";
 import degreeIcon from "./Assests/degree.png";
@@ -141,6 +141,12 @@ function App() {
 			</Suspense>
 			<Suspense fallback={<Loading />}>
 				<About />
+			</Suspense>
+			<Suspense fallback={<Loading />}>
+				<Skills />
+			</Suspense>
+			<Suspense fallback={<Loading />}>
+				<Project />
 			</Suspense>
 			<Suspense fallback={<Loading />}>
 				<Footer />

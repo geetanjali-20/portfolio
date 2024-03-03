@@ -75,7 +75,7 @@ const About = () => {
 					</div>
 				</div>
 				<div className="secondSection">
-					<div className="titleExperience">
+					<div className="titleExperience HeadingOfAll">
 						{dataJson["Experiences"]["Title"]}
 					</div>
 					<img src={logo} className="LogoImage" alt="myImage" />
@@ -84,7 +84,7 @@ const About = () => {
 
 			{/* <--   Education Section   -->*/}
 			<div className="EducationSection">
-				<div className="firstSection">
+				<div className="firstSection HeadingOfAll">
 					{dataJson["Education"]["Title"]}
 				</div>
 				<div className="secondSection">
