@@ -145,9 +145,9 @@ function App() {
 			<Suspense fallback={<Loading />}>
 				<Skills />
 			</Suspense>
-			<Suspense fallback={<Loading />}>
+			{/* <Suspense fallback={<Loading />}>
 				<Project />
-			</Suspense>
+			</Suspense> */}
 			<Suspense fallback={<Loading />}>
 				<Footer />
 			</Suspense>
