@@ -49,19 +49,23 @@
 	"Skills": [
 		{
 			"Heading": "Front-End ",
-			"skillsName": ["HTML5", "CSS3", "JavaScript", "ReactJS"]
+			"skillsName": ["HTML5", "CSS3", "JavaScript", "TypeScript","ReactJS","Django","XML", "JQuery","JSP"]
 		},
 		{
 			"Heading": "Languages",
 			"skillsName": ["C", "C++", "Python", "Java"]
 		},
 		{
-			"Heading": "Front-End1",
+			"Heading": "Database",
+			"skillsName": ["MySQL", "MongoDB"]
+		},
+		{
+			"Heading": "M.L./Data Science",
 			"skillsName": ["HTML5", "CSS3", "JavaScript", "ReactJS"]
 		},
 		{
-			"Heading": "Languages1",
-			"skillsName": ["C", "C++", "Python", "Java"]
+			"Heading": "Others",
+			"skillsName": ["GIT", "GITHUB", "PostMan", "JIRA", "AWS"]
 		}
 	],
 
@@ -91,5 +95,25 @@
 			}
 		]
 	},
-	"Projects": {}
+	"Projects": {},
+	"Footer" : {
+		"Socials": [
+			{
+				"link": "https://www.linkedin.com/in/geetanjali-sharma/01",
+				"alt": "LinkedIn"
+			},
+			{
+				"link": "mailto:geetus2001@gmail.com",
+				"alt": "Gmail"
+			},
+			{
+				"link": "https://github.com/geetanjali-20",
+				"alt": "Github"
+			},
+			{
+				"link": "https://linktr.ee/geetanjali1220",
+				"alt": "Linktree"
+			}
+		]
+	}
 }

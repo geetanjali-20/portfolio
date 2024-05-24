@@ -4,12 +4,12 @@ import LinkedIn from "../Assests/LinkedIn.png";
 import Mail from "../Assests/email.png";
 import Linktree from "../Assests/link.png";
 import Github from "../Assests/github.png";
-import Code from "../Assests/code.png";
+// import Code from "../Assests/code.png";
 import dataJson from "../Configs/JSON/Content.json";
 const Footer = () => {
-    const JsonData = dataJson.Home.Socials
+    const JsonData = dataJson.Footer.Socials
     const data = [
-        LinkedIn,Mail,Github,Code,Linktree]
+        LinkedIn,Mail,Github,Linktree]
   return (
     <footer class="main-footer">
       <div class="main-container">

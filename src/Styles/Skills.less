@@ -13,7 +13,6 @@
 	// box-shadow: 5px 5px 10px #787878;
 	// background-color: #7878782b;
 	// border-radius: 8px;
-	overflow: none;
     font-family: "Poppins";
 	
 	.cardsSection {
@@ -24,36 +23,48 @@
 		padding: 40px 0px;
 	}
 	.card {
-		background-color: #787878;
+		// background-color: #787878;
 		font: normal normal normal 18px/20px "Poppins";
 		color: #fff;
-		padding: 20px 30px;
+		padding: 20px;
+		cursor: pointer;
+		background-color: #3498DB;
+		border: 2px solid;
 	}
 	.expanded {
 		// opacity: 1;
 		background-color: #6e6b6b;
+		background-color: #3498DB;
+		border: 2px solid;
 		z-index: 4;
 	}
 	.notexpanded {
 		// opacity: 0.5;
-		background-color: #787878;
+		background-color: #3498DB;
+		border: 2px solid;
 	}
     .expandedHeading {
 		font: normal normal normal 26px/30px "Poppins";
 	}
 	.notexpandedHeading {
-		font: normal normal normal 18px/20px "Poppins";
-		color: rgb(0, 0, 0);
+		font: normal normal 500 20px/24px "Poppins";
+		color: #283747;
 		opacity: 1;
 	}
-	.card p {
+	.card .skillsDiv {
 		padding-top: 1rem;
 		line-height: 150%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+		padding-left: 2.8rem;
 	}
 	.expand {
-		width: 25rem;
+		width: 20rem;
         .skillSet{
             font: normal normal normal 16px/20px "Poppins";
+			display: flex;
+			justify-content: flex-start;
         }
 	}
 }

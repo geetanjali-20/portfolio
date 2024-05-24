@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const CardComponent = observer(({data}) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const skill = data
-	console.log("Skills of", skill.Heading, typeof(skill))
+	console.log("Skills of", skill.Heading)
 	return (
 		<motion.div
 			className={`card ${isOpen ? "expanded": "notexpanded"}`}
@@ -29,11 +29,13 @@ const CardComponent = observer(({data}) => {
 					transition={{ duration: 1}}
 					className="expand"
 				>
-					<p>
+					<div className="skillsDiv">
 						{skill.skillsName.map((v, i) => (
-							<div className="skillSet">{v}</div>
+							
+								<div className="skillSet"> <span className="star">⭐ </span>{v}</div>
+							
 						))}
-					</p>
+					</div>
 					{/* <button>Read more</button> */}
 				</motion.div>
 			)}
@@ -47,8 +49,12 @@ const Skills = observer(() => {
 		<div className="skillsSection">
 			<div className="skillsHeading HeadingOfAll">Skills</div>
 			<div className="cardsSection">
-				{JsonData.map((value, index) => (
-					<CardComponent data={value} key= {index} />
+				{JsonData.map((value, i) => (
+					<>
+					<CardComponent data={value} key ={i} />
+					</>
+					
+					
 				))}
 			</div>
 		</div>
