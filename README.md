@@ -1,6 +1,7 @@
 # My Portfolio Website
 
-Welcome to my portfolio website! This project showcases my work, skills, and experience. It is built using React.js, JavaScript, and various frontend technologies.
+Welcome to my portfolio website! This project showcases my work, skills, and experience. It is built using React.js, JavaScript, and various frontend technologies and is in progress... 
+🙌
 
 **Link** : https://geetanjali-20.github.io/portfolio/
 
