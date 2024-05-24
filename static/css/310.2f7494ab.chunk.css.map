@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/310.2f7494ab.chunk.css","mappings":"AAEA,gBACI,gBADJ","sources":["Styles/Project.less"],"sourcesContent":["@import \"../variables.less\";\n\n.projectSection{\n    margin: 50px 15vw;\n}\n\n@media screen and (max-width: @mobile_width) {\n}"],"names":[],"sourceRoot":""}
