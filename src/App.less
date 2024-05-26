@@ -55,8 +55,9 @@
 	transition-timing-function: ease-in;
 	transition: all 0.5s ease;
 }
+// to transparent navbar on scroll
 .navbar_black {
-	background: rgba(255,255,255,0.6);
+	// background: rgba(255,255,255,0.6);
 }
 
 .navbar-container {
@@ -65,6 +66,9 @@
 	align-items: center;
 	margin: 0 auto;
 	padding: 0 50px;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .logo {
@@ -80,7 +84,7 @@
 .nav-links a {
 	color: #fff;
 	text-decoration: none;
-	margin: 0 15px;
+	margin: 0 20px;
 	font-size: 1rem;
 }
 

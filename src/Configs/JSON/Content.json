@@ -49,7 +49,17 @@
 	"Skills": [
 		{
 			"Heading": "Front-End ",
-			"skillsName": ["HTML5", "CSS3", "JavaScript", "TypeScript","ReactJS","Django","XML", "JQuery","JSP"]
+			"skillsName": [
+				"HTML5",
+				"CSS3",
+				"JavaScript",
+				"TypeScript",
+				"ReactJS",
+				"Django",
+				"XML",
+				"JQuery",
+				"JSP"
+			]
 		},
 		{
 			"Heading": "Languages",
@@ -66,6 +76,107 @@
 		{
 			"Heading": "Others",
 			"skillsName": ["GIT", "GITHUB", "PostMan", "JIRA", "AWS"]
+		}
+	],
+	"Skill": [
+		{
+			"type": "Frontend",
+			"list": [
+				{
+					"name": "ReactJS",
+					"icon": "<i class='devicon-react-original-wordmark colored'></i>"
+				},
+				{
+					"name": "JavaScript",
+					"icon": "<i class='devicon-javascript-plain colored'></i>"
+				},
+				{
+					"name": "TypeScript",
+					"icon": "<i class='devicon-typescript-plain colored'></i>"
+				},{
+					"name": "Jquery",
+					"icon": "<i class='devicon-jquery-plain-wordmark colored'></i>"
+				},
+				{
+					"name": "HTML5",
+					"icon": "<i class='devicon-html5-plain-wordmark colored'></i>"
+				},
+				{
+					"name": "CSS",
+					"icon": "<i class='devicon-css3-plain-wordmark colored'></i>"
+				},
+				{
+					"name": "Less",
+					"icon": "<i class='devicon-less-plain-wordmark colored'></i>"
+				},
+				{
+					"name": "Django",
+					"icon": "<i class='devicon-django-plain-wordmark colored'></i>"
+				}
+			]
+		},
+		{
+			"type": "Languages",
+			"list": [
+				{
+					"name": "C",
+					"icon": "<i class='devicon-c-plain-wordmark colored'></i>"
+				},
+				{
+					"name": "C++",
+					"icon": "<i class='devicon-cplusplus-plain-wordmark colored'></i>"
+				},
+				{
+					"name": "Python",
+					"icon": "<i class='devicon-python-plain-wordmark colored'></i>"
+				},
+				{
+					"name": "Java",
+					"icon": "<i class='devicon-java-plain-wordmark colored'></i>"
+				}
+			]
+		},
+		{
+			"type": "DataBase",
+			"list": [
+				{
+					"name": "MySQL",
+					"icon": "<i class='devicon-mysql-plain-wordmark colored'></i>"
+				},
+				{
+					"name": "SQL",
+					"icon": "<i class='devicon-azuresqldatabase-plain colored'></i>"
+				},
+				
+				{
+					"name": "MongoDB",
+					"icon": "<i class='devicon-mongodb-plain-wordmark colored'></i>"
+				}
+			]
+		},{
+			"type": "Others",
+			"list": [
+				{
+					"name": "Git",
+					"icon": "<i class='devicon-git-plain-wordmark colored'></i>"
+				},
+				{
+					"name": "GitHub",
+					"icon": "<i class='devicon-github-original-wordmark colored'></i>"
+				},
+				{
+					"name": "Postman",
+					"icon": "<i class='devicon-postman-plain-wordmark colored'></i>"
+				},
+				{
+					"name": "Jira",
+					"icon": "<i class='devicon-jira-plain-wordmark colored'></i>"
+				},
+				{
+					"name": "AWS",
+					"icon": "<i class='devicon-amazonwebservices-plain-wordmark colored'></i>"
+				}
+			]
 		}
 	],
 
@@ -96,7 +207,7 @@
 		]
 	},
 	"Projects": {},
-	"Footer" : {
+	"Footer": {
 		"Socials": [
 			{
 				"link": "https://www.linkedin.com/in/geetanjali-sharma/01",

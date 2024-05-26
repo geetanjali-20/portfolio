@@ -2,12 +2,12 @@ import React from "react";
 import dataJson from "../Configs/JSON/Content.json";
 import "../Styles/About.less";
 import logo from "../Assests/CompanyLogo.png";
-// import { motion } from "framer-motion";
-// import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import VerticalLinearStepper from "./Stepper";
 
 const About = () => {
-	// const [ref, inView] = useInView();
+	const [ref, inView] = useInView();
 	return (
 		<>
 			{/* <--   About Section   -->*/}
@@ -83,14 +83,20 @@ const About = () => {
 			</div>
 
 			{/* <--   Education Section   -->*/}
-			<div className="EducationSection">
+			<motion.div className="EducationSection"
+			ref={ref}
+			style={{
+				transform: inView ? "none" : "translateX(-200px)",
+				opacity: inView ? 1 : 0,
+				transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+			}}>
 				<div className="firstSection HeadingOfAll">
 					{dataJson["Education"]["Title"]}
 				</div>
 				<div className="secondSection">
 					<VerticalLinearStepper />
 				</div>
-			</div>
+			</motion.div>
 		</>
 	);
 };

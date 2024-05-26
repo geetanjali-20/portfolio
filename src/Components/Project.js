@@ -3,7 +3,7 @@ import "../Styles/Project.less";
 const Project = () => {
   return (
     <div className='projectSection'>
-        <div className='HeadingOfAll'>Projects</div>
+        {/* <div className='HeadingOfAll'>Projects</div> */}
     </div>
   )
 }

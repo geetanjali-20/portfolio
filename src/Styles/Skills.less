@@ -10,11 +10,16 @@
 	align-items: center;
 	// justify-content: center;
 	padding: 30px;
-	// box-shadow: 5px 5px 10px #787878;
+	display: flex;
+	justify-content: space-around;
+	box-shadow: 5px 5px 10px #787878;
 	// background-color: #7878782b;
 	// border-radius: 8px;
-    font-family: "Poppins";
-	
+	font-family: "Poppins";
+	// background-color: #dfdbdbb8;
+    border-radius: 20px;
+    padding: 40px 20px;
+
 	.cardsSection {
 		display: flex;
 		align-items: center;
@@ -28,22 +33,22 @@
 		color: #fff;
 		padding: 20px;
 		cursor: pointer;
-		background-color: #3498DB;
+		background-color: #3498db;
 		border: 2px solid;
 	}
 	.expanded {
 		// opacity: 1;
 		background-color: #6e6b6b;
-		background-color: #3498DB;
+		background-color: #3498db;
 		border: 2px solid;
 		z-index: 4;
 	}
 	.notexpanded {
 		// opacity: 0.5;
-		background-color: #3498DB;
+		background-color: #3498db;
 		border: 2px solid;
 	}
-    .expandedHeading {
+	.expandedHeading {
 		font: normal normal normal 26px/30px "Poppins";
 	}
 	.notexpandedHeading {
@@ -61,13 +66,78 @@
 	}
 	.expand {
 		width: 20rem;
-        .skillSet{
-            font: normal normal normal 16px/20px "Poppins";
+		.skillSet {
+			font: normal normal normal 16px/20px "Poppins";
 			display: flex;
 			justify-content: flex-start;
-        }
+		}
+	}
+}
+.skillsHeadingblock{
+	display: flex;
+	flex-direction: column;
+	.skillsImage img {
+		width: 500px;
+		margin-bottom: 40px;
 	}
 }
 
+.skillsHeading{
+    font: normal normal normal 56px / 50px "Poppins";
+	letter-spacing: 7.23px;
+	text-transform: none;
+}
+.skills-container {
+	// display: grid;
+	/* grid-template-columns: 1fr 1fr; */
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+	gap: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skills-section-title {
+	font: normal normal 300 28px / 34px "Poppins";
+    padding: 10px 40px;
+    text-align: center;
+    // border-bottom: 1px solid grey;
+	// font: normal normal 300 24px / 34px "Poppins";
+    // background: rebeccapurple;
+    // padding: 10px 40px;
+    // border-radius: 12px;
+    // color: #fff;
+}
+.skills-section{
+	// border-bottom: 1px solid darkgrey;
+	// padding: 0 50px;
+	align-content: center;
+}
+.skills-list {
+	display: flex;
+	justify-content: space-around;
+	padding: 20px 0;
+	gap: 20px;
+}
+.skillIcons {
+	i {
+		font-size: 3em;
+		// animation: updown 1s ease infinite;
+	}
+}
+@keyframes updown {
+	0% {
+	  transform: translateY(-100%);
+	}
+  
+	50% {
+	  transform: translateY(100%);
+	}
+  
+	100% {
+	  transform: translateY(-100%);
+	}
+  }
 @media screen and (max-width: @mobile_width) {
 }
