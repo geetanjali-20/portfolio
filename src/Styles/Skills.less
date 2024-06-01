@@ -160,15 +160,22 @@
 			}
 			.skills-list {
 				display: grid;
-				grid-template-columns: 1fr 1fr;
+				grid-template-columns: 1fr 1fr 1fr;
 			}
 		}
 	}
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px){
 	.skillsSection .skills-section .skills-list {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 }
+@media screen and (max-width: 1500px) and (min-width: @mobile_width)  {
+	.skillsSection .skills-section .skills-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+
