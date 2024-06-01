@@ -34,35 +34,29 @@ const Home = () => {
 	const data = [LinkedIn, Mail, Github, Code, Linktree];
 
 	return (
-		<div className="homeBody">
+		<div className="homeBody" id="home">
 			<div className="HomePage">
-			<div className="centerElements">
-				<img src={my} className="myImage" alt="myImage" />
-				<div className="helloText">
-					<Typewriter
-						onInit={(typewriter) => {
-							typewriter
-								.typeString(dataJson["Home"]["MainText1"])
-								// .pauseFor(1000)
-								// .deleteAll()
-								// .typeString(dataJson["Home"]["MainText2"])
-								// .pauseFor(1000)
-								// .deleteAll()
-								// .typeString(dataJson["Home"]["MainText3"])
-								.start();
-						}}
-					/>
+				<div className="centerElements">
+					<img src={my} className="myImage" alt="myImage" />
+					<div className="helloText">
+						<Typewriter
+							onInit={(typewriter) => {
+								typewriter
+									.typeString(dataJson["Home"]["MainText1"])
+									.start();
+							}}
+						/>
+					</div>
+					<div className="aboutSection">
+						<div className="aboutTitle">
+							{dataJson["About"]["Title"]}
+						</div>
+						<div className="aboutText">
+							{dataJson["About"]["Text"]}
+						</div>
+					</div>
 				</div>
-				<div className="aboutSection">
-				<div className="aboutTitle">{dataJson["About"]["Title"]}</div>
-				<div className="aboutText">{dataJson["About"]["Text"]}</div>
-			</div>
-			</div>
-				{/* <--   About Section   -->*/}
-			{/* <div className="aboutSection">
-				<div className="aboutTitle">{dataJson["About"]["Title"]}</div>
-				<div className="aboutText">{dataJson["About"]["Text"]}</div>
-			</div> */}
+				
 			</div>
 			<div class="homeSocials">
 				{JsonData.map((value, index) => (

@@ -2,7 +2,7 @@
 .App {
 	text-align: center;
 	overflow-x: hidden;
-	background-color: #FBFAF5;
+	background-color: #fbfaf5;
 }
 
 .App-logo {
@@ -42,11 +42,11 @@
 
 .navbar {
 	position: fixed;
-  	top: 0;
+	top: 0;
 	width: 100%;
 	color: #fff;
 	background-color: #fff;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 	padding: 12px 0;
 	height: 36px;
 	z-index: 1;
@@ -67,8 +67,8 @@
 	margin: 0 auto;
 	padding: 0 50px;
 	position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .logo {
@@ -90,12 +90,11 @@
 
 .nav-links a:hover {
 	text-decoration: underline;
-	
 }
-.HeadingOfAll{
+.HeadingOfAll {
 	font: normal normal normal 44px/50px "Poppins";
-		text-transform: uppercase;
-		text-shadow: 2px 2px 4px #616161;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 4px #616161;
 }
 
 .active {
@@ -111,14 +110,24 @@
 .logos {
 	width: 26px;
 	height: 26px;
+	cursor: pointer;
 }
-.logos:hover{
-	transition: all .4s ease-in-out;
-	scale: 1.4;
+.logos:hover {
+	transition: all 0.2s ease-in-out;
+	scale: 1.2;
 }
 // .IconLinks {
-// 	transition: transform 0.3s ease; 
+// 	transition: transform 0.3s ease;
 // }
-// .IconLinks::hover {
-// 	transform: scale(1.2);
-// }
+.IconLinks::hover {
+	cursor: pointer;
+}
+
+@media screen and (max-width: @mobile_width) {
+	.navbar-container {
+		padding: 0 20px;
+		.nav-links a {
+			margin: 0 10px;
+		}
+	}
+}

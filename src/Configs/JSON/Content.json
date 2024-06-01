@@ -28,7 +28,7 @@
 	},
 	"About": {
 		"Title": "About",
-		"Text": "I am Geetanjali Sharma, a Software Developer at DePronto Infotech. In my current role, I have gained valuable experience in front-end development, with a focus on technologies such as React.js, JSP, jQuery and various CSS frameworks like (Mui, AntD)."
+		"Text": "A Software Developer- 'Turning creative visions into interactive, user-friendly web experiences.' "
 	},
 	"Experiences": {
 		"Title": "Work Experience",
@@ -93,7 +93,8 @@
 				{
 					"name": "TypeScript",
 					"icon": "<i class='devicon-typescript-plain colored'></i>"
-				},{
+				},
+				{
 					"name": "Jquery",
 					"icon": "<i class='devicon-jquery-plain-wordmark colored'></i>"
 				},
@@ -147,13 +148,14 @@
 					"name": "SQL",
 					"icon": "<i class='devicon-azuresqldatabase-plain colored'></i>"
 				},
-				
+
 				{
 					"name": "MongoDB",
 					"icon": "<i class='devicon-mongodb-plain-wordmark colored'></i>"
 				}
 			]
-		},{
+		},
+		{
 			"type": "Others",
 			"list": [
 				{

@@ -10,7 +10,7 @@
 // 	border-radius: 8px;
 // 	// background-color: @orange;
 // 	// background-color: #7878782b;
-	
+
 // 	.aboutTitle {
 // 		font: normal normal normal 44px/50px "Poppins";
 // 		text-shadow: 2px 2px 4px #616161;
@@ -145,10 +145,13 @@
 			margin-right: 0px;
 			margin-bottom: 20px;
 			order: 1;
-	
+
 			.titleExperience {
 				font: normal normal normal 38px/40px "Poppins";
 				text-shadow: 2px 2px 4px #616161;
+			}
+			.LogoImage {
+				width: 300px;
 			}
 		}
 	}
@@ -159,6 +162,14 @@
 		}
 		.secondSection {
 			text-align: justify;
+		}
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.workExperience .secondSection {
+		.LogoImage {
+			width: 250px;
 		}
 	}
 }

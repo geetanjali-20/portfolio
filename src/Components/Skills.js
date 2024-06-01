@@ -5,7 +5,7 @@ import { observer } from "mobx-react";
 import { motion } from "framer-motion";
 import SkillCard from "./SkillCard";
 import { useInView } from "react-intersection-observer";
-import skillsIamge from "../Assests/skills.svg"
+import skillsIamge from "../Assests/skills.svg";
 
 const CardComponent = observer(({ data }) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -65,18 +65,20 @@ const Skills = observer(() => {
 			style={{
 				transform: inView ? "none" : "translateX(200px)",
 				opacity: inView ? 1 : 0,
-				transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+				transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
 			}}
+			id="skill"
 			// whileHover={{
 			// 	scale: 1.1,
 			// }}
 		>
 			<div className="skillsHeadingblock">
-			
-			<div className="skillsImage"><img src={skillsIamge}/></div>
-			<div className="skillsHeading HeadingOfAll">Skills</div>
+				<div className="skillsImage">
+					<img src={skillsIamge} />
+				</div>
+				<div className="skillsHeading HeadingOfAll">Skills</div>
 			</div>
-			
+
 			{/* <div className="cardsSection">
 				{JsonData.map((value, i) => (
 					<>
