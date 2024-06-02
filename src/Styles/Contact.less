@@ -1,0 +1,78 @@
+@import "../variables.less";
+
+.ContactSection {
+	margin: 50px 15vw;
+	display: flex;
+	border: 1px solid;
+	border-radius: 20px;
+	.Firstsection {
+		background-color: black;
+		border-radius: 20px 0 0 20px;
+		color: #fff;
+		width: 50%;
+        padding: 50px;
+    position: relative;
+		.contactHeading {
+			font: normal normal 300 60px/34px "Poppins";
+            margin-top: 50px ;
+		}
+		
+		.letterImg {
+            position: absolute;
+            bottom: 40px;
+            right: 30%;
+		}
+	}
+	.contactForm {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 30px auto;
+        .subHeading {
+            font: normal normal 200 26px / 24px "Poppins";
+            margin-bottom: 25px;
+		}
+		input,
+		textarea {
+			width: 100%;
+			padding: 10px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		.fields {
+			display: flex;
+			justify-content: flex-start;
+			flex-direction: column;
+			margin-bottom: 15px;
+            width: 400px;
+			.Labels {
+				font: normal normal 400 16px/24px "Poppins";
+				text-align: left;
+				width: 150px;
+			}
+		}
+.sendButton{
+    display: flex;
+    justify-content: flex-end;
+		.submitButton {
+            width: 150px;
+            font: normal normal 400 18px / 24px "Poppins";
+            // background: #8e43dd;
+            color: white;
+            background: black;
+        
+				
+		}
+    }
+	}
+}
+
+@media screen and (max-width: @mobile_width) {
+	.ContactSection {
+		margin: 50px 30px;
+	}
+}

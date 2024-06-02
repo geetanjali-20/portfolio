@@ -1,6 +1,6 @@
 import { Suspense, useEffect, useLayoutEffect, useState, useRef } from "react";
 import "./App.less";
-import { Home, About, Skills, Project, Footer } from "./Components";
+import { Home, About, Skills, Project, Footer, Contact } from "./Components";
 import logo from "./Assests/Glogo.png";
 import HomeIcon from "./Assests/home.png";
 import degreeIcon from "./Assests/degree.png";
@@ -102,7 +102,7 @@ function App() {
 									alt="logo"
 								/>
 							</Link>
-							<Link
+							{/* <Link
 								to="/"
 								activeClassName="active"
 								className="IconLinks"
@@ -112,9 +112,9 @@ function App() {
 									className="logos"
 									alt="logo"
 								/>
-							</Link>
+							</Link> */}
 							<Link
-								to="/"
+								to="contact"
 								activeClassName="active"
 								className="IconLinks"
 							>
@@ -122,6 +122,9 @@ function App() {
 									src={callIcon}
 									className="logos"
 									alt="logo"
+									smooth={true}
+									offset={-100}
+									duration={100}
 								/>
 							</Link>
 						</div>
@@ -140,6 +143,9 @@ function App() {
 			</Suspense>
 			<Suspense fallback={<Loading />}>
 				<Project />
+			</Suspense>
+			<Suspense fallback={<Loading />}>
+				<Contact />
 			</Suspense>
 			<Suspense fallback={<Loading />}>
 				<Footer />

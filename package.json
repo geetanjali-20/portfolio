@@ -5,6 +5,7 @@
   "homepage": "https://geetanjali-20.github.io/portfolio",
   "dependencies": {
     "@craco/craco": "^7.1.0",
+    "@emailjs/browser": "^4.3.3",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.16",
