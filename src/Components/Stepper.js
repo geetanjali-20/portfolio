@@ -8,6 +8,20 @@ const VerticalLinearStepper = () => {
     </div>
     <div class="row row-1">
       <section>
+      <img class="icon" src={CheckedIcon} alt='check'/>
+        <div class="details">
+          <span class="title">Minor in Artificial Intelligence(AI)</span>
+          <span>2024-Present</span>
+        </div>
+        <p>Indian Institute of Technology Ropar (IIT Ropar)</p>
+        <div class="bottom">
+          {/* <a href="#">Read more</a> */}
+          {/* <i>Grades- 91.4%</i> */}
+        </div>
+      </section>
+    </div>
+    <div class="row row-2">
+      <section>
         <img class="icon" src={CheckedIcon} alt='check'/>
         <div class="details">
           <span class="title">Bachelor of Technology <br/>(Computer Engineering)</span>
@@ -20,7 +34,7 @@ const VerticalLinearStepper = () => {
         </div>
       </section>
     </div>
-    <div class="row row-2">
+    <div class="row row-1">
       <section>
       <img class="icon" src={CheckedIcon} alt='check'/>
         <div class="details">
@@ -34,7 +48,7 @@ const VerticalLinearStepper = () => {
         </div>
       </section>
     </div>
-    <div class="row row-1">
+    <div class="row row-2">
     <section>
       <img class="icon" src={CheckedIcon} alt='check'/>
         <div class="details">

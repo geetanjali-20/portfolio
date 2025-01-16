@@ -45,10 +45,11 @@
 	top: 0;
 	width: 100%;
 	color: #fff;
-	background-color: #fff;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-	padding: 12px 0;
-	height: 36px;
+	// background-color: #fff;
+	background: rgba(255, 255, 255, 0);
+	// box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+	padding: 20px 0 0;
+	height: 56px;
 	z-index: 1;
 	box-sizing: unset;
 	/* Animations */
@@ -57,12 +58,14 @@
 }
 // to transparent navbar on scroll
 .navbar_black {
-	// background: rgba(255,255,255,0.6);
+	background: rgba(191, 191, 191, 0.6);
+	// background-color: #fff;
+	display: none;
 }
 
 .navbar-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 	margin: 0 auto;
 	padding: 0 50px;
@@ -108,8 +111,8 @@
 	color: #333;
 }
 .logos {
-	width: 26px;
-	height: 26px;
+	width: 32px;
+	height: 32px;
 	cursor: pointer;
 }
 .logos:hover {
@@ -124,10 +127,21 @@
 }
 
 @media screen and (max-width: @mobile_width) {
+	.navbar {
+		background: rgba(255, 255, 255, 0.2);
+		padding-top: 10px;
+	}
 	.navbar-container {
 		padding: 0 20px;
-		.nav-links a {
-			margin: 0 10px;
+		justify-content: space-around;
+		.nav-links {
+			display: flex;
+			flex-direction: row;
+			gap: 5%;
+			justify-content: center;
+			a {
+				margin: 0 10px;
+			}
 		}
 	}
 }

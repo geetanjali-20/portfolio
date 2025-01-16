@@ -1,15 +1,19 @@
-import { Suspense, useEffect, useLayoutEffect, useState, useRef } from "react";
-import "./App.less";
-import { Home, About, Skills, Project, Footer, Contact } from "./Components";
-import logo from "./Assests/Glogo.png";
-import HomeIcon from "./Assests/home.png";
-import degreeIcon from "./Assests/degree.png";
-import portfolioIcon from "./Assests/portfolio.png";
-import skillIcon from "./Assests/skill.png";
-import projectIcon from "./Assests/project.png";
-import callIcon from "./Assests/call.png";
-import AppStore from "./Configs/Store/appStore";
+import { Suspense, useEffect, useLayoutEffect, useState } from "react";
 import { Link } from "react-scroll";
+import "./App.less";
+// import callIcon from "./Assests/call.png";
+// import degreeIcon from "./Assests/degree.png";
+import logo from "./Assests/Glogo.png";
+// import HomeIcon from "./Assests/home.png";
+// import portfolioIcon from "./Assests/portfolio.png";
+// import skillIcon from "./Assests/skill.png";
+import HomeIcon from "./Assests/NavLinks/img1.png"
+import portfolioIcon from "./Assests/NavLinks/img2.png"
+import degreeIcon from "./Assests/NavLinks/img3.png"
+import skillIcon from "./Assests/NavLinks/img4.png"
+import callIcon from "./Assests/NavLinks/img5.png"
+import { About, Contact, Footer, Home, Project, Skills } from "./Components";
+import AppStore from "./Configs/Store/appStore";
 
 function App() {
 	const [show, handleShow] = useState(false);
@@ -42,65 +46,22 @@ function App() {
 				{/* Navbar */}
 				<nav className={`navbar ${show && "navbar_black"}`}>
 					<div className="navbar-container">
-						<Link to="/" className="logo">
+						{/* <Link to="/" className="logo">
 							<img src={logo} className="logoimg" alt="logo" />
-						</Link>
+						</Link> */}
 						<div className="nav-links">
-							<Link
-								to="home"
-								activeClassName="active"
-								className="IconLinks"
-								smooth={true}
-								duration={100}
-							>
-								<img
-									src={HomeIcon}
-									className="logos"
-									alt="logo"
-								/>
+							<Link to="home" activeClassName="active" className="IconLinks" smooth={true} duration={100}>
+								<img src={HomeIcon} className="logos" alt="logo" />
 							</Link>
 
-							<Link
-								to="work"
-								activeClassName="active"
-								className="IconLinks"
-								smooth={true}
-								offset={-200}
-								duration={100}
-							>
-								<img
-									src={portfolioIcon}
-									className="logos"
-									alt="logo"
-								/>
+							<Link to="work" activeClassName="active" className="IconLinks" smooth={true} offset={-200} duration={100}>
+								<img src={portfolioIcon} className="logos" alt="logo" />
 							</Link>
-							<Link
-								to="education"
-								activeClassName="active"
-								className="IconLinks"
-								smooth={true}
-								offset={-100}
-								duration={100}
-							>
-								<img
-									src={degreeIcon}
-									className="logos"
-									alt="logo"
-								/>
+							<Link to="education" activeClassName="active" className="IconLinks" smooth={true} offset={-100} duration={100}>
+								<img src={degreeIcon} className="logos" alt="logo" />
 							</Link>
-							<Link
-								to="skill"
-								activeClassName="active"
-								className="IconLinks"
-								smooth={true}
-								offset={-100}
-								duration={100}
-							>
-								<img
-									src={skillIcon}
-									className="logos"
-									alt="logo"
-								/>
+							<Link to="skill" activeClassName="active" className="IconLinks" smooth={true} offset={-100} duration={100}>
+								<img src={skillIcon} className="logos" alt="logo" />
 							</Link>
 							{/* <Link
 								to="/"
@@ -113,19 +74,8 @@ function App() {
 									alt="logo"
 								/>
 							</Link> */}
-							<Link
-								to="contact"
-								activeClassName="active"
-								className="IconLinks"
-							>
-								<img
-									src={callIcon}
-									className="logos"
-									alt="logo"
-									smooth={true}
-									offset={-100}
-									duration={100}
-								/>
+							<Link to="contact" activeClassName="active" className="IconLinks">
+								<img src={callIcon} className="logos" alt="logo" smooth={true} offset={-100} duration={100} />
 							</Link>
 						</div>
 					</div>

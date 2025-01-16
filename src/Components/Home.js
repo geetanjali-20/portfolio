@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/Home.less";
-import my from "../Assests/my.png";
+import my from "../Assests/img.jpg";
 import scrollDown from "../Assests/arrow.png";
 import dataJson from "../Configs/JSON/Content.json";
 import Typewriter from "typewriter-effect";
@@ -33,68 +33,43 @@ const Home = () => {
 	}, []);
 	const data = [LinkedIn, Mail, Github, Code, Linktree];
 
+	// ...existing code...
+
 	return (
 		<div className="homeBody" id="home">
 			<div className="HomePage">
 				<div className="centerElements">
-					<img src={my} className="myImage" alt="myImage" />
-					<div className="helloText">
-						<Typewriter
-							onInit={(typewriter) => {
-								typewriter
-									.typeString(dataJson["Home"]["MainText1"])
-									.start();
-							}}
-						/>
+					<div className="leftHalf">
+						<img src={my} className="myImage" alt="myImage" />
 					</div>
-					<div className="aboutSection">
-						<div className="aboutTitle">
-							{dataJson["About"]["Title"]}
+					<div className="rightHalf">
+						<div className="helloText">
+							<Typewriter
+								onInit={(typewriter) => {
+									typewriter.typeString(dataJson["Home"]["MainText1"]).start();
+								}}
+							/>
 						</div>
-						<div className="aboutText">
-							{dataJson["About"]["Text"]}
+						<div className="aboutSection">
+							<div className="aboutTitle">{dataJson["About"]["Title"]}</div>
+							<div className="aboutText">{dataJson["About"]["Text"]}</div>
 						</div>
 					</div>
 				</div>
-				
 			</div>
-			<div class="homeSocials">
+			<div className="homeSocials">
 				{JsonData.map((value, index) => (
-					<div class="social">
-						<a
-							href={value.link}
-							class="social-icon-link"
-							rel="noreferrer"
-							target="_blank"
-						>
-							<img
-								src={data[index]}
-								alt={value.alt}
-								class="social-icon"
-							/>
+					<div className="social" key={index}>
+						<a href={value.link} className="social-icon-link" rel="noreferrer" target="_blank">
+							<img src={data[index]} alt={value.alt} className="social-icon" />
 						</a>
 					</div>
 				))}
 			</div>
-			{isVisible && (
-				<Button
-					className={`blinking-button ${isBlinking ? "blink" : ""}`}
-					id="scrollId"
-					onClick={() => {
-						window.scrollTo(0, 700);
-						setIsVisible(false);
-					}}
-				>
-					<img
-						src={scrollDown}
-						className="arrowImage"
-						alt="myImage"
-					/>
-					<div>Know More</div>
-				</Button>
-			)}
 		</div>
 	);
+
+	// ...existing code...
 };
 
 export default Home;

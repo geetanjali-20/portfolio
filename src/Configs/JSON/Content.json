@@ -28,7 +28,7 @@
 	},
 	"About": {
 		"Title": "About",
-		"Text": "A Software Developer- 'Turning creative visions into interactive, user-friendly web experiences.' "
+		"Text": "  As a Software Developer 👩‍💻 with 1.5+ years of experience, I’m all about turning ideas into seamless digital experiences. From building dynamic web applications with React.js and TypeScript to diving into the world of AI/ML.💻"
 	},
 	"Experiences": {
 		"Title": "Work Experience",
@@ -37,29 +37,19 @@
 			{
 				"Role": "Software Developer",
 				"Years": "[June 2023 - Present]",
-				"Description": "In my current role at Depronto Infotech, I have gained valuable experience in front-end development, with a focus on technologies such as React.js, JSP, and jQuery. My hands-on experience in these technologies has equipped me with the ability to create responsive and user-friendly web applications. I have successfully contributed to the development of innovative solutions that have not only met but exceeded client expectations. I have also been of deployments. I have done 20+ UATs and 5+ Live movements. "
+				"Description": "<ol><li>Worked on middleware services that significantly enhanced website’s security by incorporating advanced encryption protocols and robust authentication mechanisms, reducing security volnerabilities 40%.</li><li>Developed and maintained SEO-friendly web applications for financial firms, ensuring high-quality and maintainable code by adhering to SOLID programming principles.</li><li>React.js, JavaScript/ TypeScript and CSS frameworks like Material-UI, Ant-d.</li></ol>"
 			},
 			{
 				"Role": "Software Developer Intern",
 				"Years": "[Dec 2022 - May 2023]",
-				"Description": "I have also done my internship in DePronto itself, as a part a R&D team there I was the one handling the front-end part of 3 Projects at a time which made me recognize my multi-tasking skills. Gained proficiency in front-end development, best practices, and version control using Git."
+				"Description": "<ol><li>Collaborated with R&D team to develop and enhance projects like DMS & QMS Portals for different firms.</li><li>Built a PPAC portal for a finance firm based on JSP and JQuery.</li><li>Gained proficiency in front-end development including API integration, best coding practices in a collaborative environment, and version control using Git.</li></ol>"
 			}
 		]
 	},
 	"Skills": [
 		{
 			"Heading": "Front-End ",
-			"skillsName": [
-				"HTML5",
-				"CSS3",
-				"JavaScript",
-				"TypeScript",
-				"ReactJS",
-				"Django",
-				"XML",
-				"JQuery",
-				"JSP"
-			]
+			"skillsName": ["HTML5", "CSS3", "JavaScript", "TypeScript", "ReactJS", "Django", "XML", "JQuery", "JSP"]
 		},
 		{
 			"Heading": "Languages",

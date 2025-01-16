@@ -1,4 +1,5 @@
 import React from "react";
+import purify from "dompurify";
 import dataJson from "../Configs/JSON/Content.json";
 import "../Styles/About.less";
 import logo from "../Assests/CompanyLogo.png";
@@ -12,9 +13,9 @@ const About = () => {
 		<>
 			<div className="workExperience" id="work">
 				<div className="firstSection">
-					<div className="companyName">
+					{/* <div className="companyName">
 						{dataJson["Experiences"]["Company"]}
-					</div>
+					</div> */}
 					<div className="experiences">
 						{dataJson["Experiences"]["Items"].map((item, index) => (
 							<div key={index}>
@@ -25,7 +26,7 @@ const About = () => {
 								</ul>
 
 								<div className="years">{item.Years}</div>
-								<div className="desc">{item.Description}</div>
+								<div className="desc" dangerouslySetInnerHTML={{__html:purify.sanitize(item.Description)}}></div>
 							</div>
 						))}
 					</div>

@@ -26,7 +26,7 @@ const ContactUs = () => {
 		<>
 			<div className="ContactSection" id="contact">
 				<div className="Firstsection">
-					<div className="contactHeading">Contact</div>
+					<div className="contactHeading">Let's Connect</div>
 					{/* <div className="subHeading">
 						Get in touch, just drop a message...
 					</div> */}
