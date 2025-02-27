@@ -1,22 +1,20 @@
 import { Suspense, useEffect, useLayoutEffect, useState } from "react";
 import { Link } from "react-scroll";
 import "./App.less";
-// import callIcon from "./Assests/call.png";
-// import degreeIcon from "./Assests/degree.png";
-import logo from "./Assests/Glogo.png";
-// import HomeIcon from "./Assests/home.png";
-// import portfolioIcon from "./Assests/portfolio.png";
-// import skillIcon from "./Assests/skill.png";
-import HomeIcon from "./Assests/NavLinks/img1.png"
-import portfolioIcon from "./Assests/NavLinks/img2.png"
-import degreeIcon from "./Assests/NavLinks/img3.png"
-import skillIcon from "./Assests/NavLinks/img4.png"
-import callIcon from "./Assests/NavLinks/img5.png"
+import logo from "./Assests/Logo.png";
+import HomeIcon from "./Assests/NavLinks/img1.png";
+import portfolioIcon from "./Assests/NavLinks/img2.png";
+import degreeIcon from "./Assests/NavLinks/img3.png";
+import skillIcon from "./Assests/NavLinks/img4.png";
+import callIcon from "./Assests/NavLinks/img5.png";
 import { About, Contact, Footer, Home, Project, Skills } from "./Components";
 import AppStore from "./Configs/Store/appStore";
+import { Skeleton } from "@mui/material";
 
 function App() {
 	const [show, handleShow] = useState(false);
+	const [loading, setLoading] = useState(true);
+
 	useLayoutEffect(() => {
 		var width = window.screen.width;
 		AppStore.setDevice(width);
@@ -27,7 +25,7 @@ function App() {
 			AppStore.setDevice(1);
 			console.log("i am here", AppStore.device);
 		}
-	});
+	}, []);
 
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
@@ -36,75 +34,87 @@ function App() {
 			} else handleShow(false);
 		});
 
+		// Simulate loading time
+		const timer = setTimeout(() => {
+			setLoading(false);
+		}, 2000); // Adjust the time as needed
+
 		return () => {
 			window.removeEventListener("scroll", null);
+			clearTimeout(timer);
 		};
 	}, []);
+
+	if (loading) {
+		return <Loading />;
+	}
+
 	return (
 		<div className="App">
 			<div>
 				{/* Navbar */}
 				<nav className={`navbar ${show && "navbar_black"}`}>
 					<div className="navbar-container">
-						{/* <Link to="/" className="logo">
+						<Link to="/" className="logo" smooth={true} duration={100}>
 							<img src={logo} className="logoimg" alt="logo" />
-						</Link> */}
+						</Link>
 						<div className="nav-links">
 							<Link to="home" activeClassName="active" className="IconLinks" smooth={true} duration={100}>
-								<img src={HomeIcon} className="logos" alt="logo" />
+								{/* <img src={HomeIcon} className="logos" alt="logo" /> */}
+								<div>Home</div>
 							</Link>
-
 							<Link to="work" activeClassName="active" className="IconLinks" smooth={true} offset={-200} duration={100}>
-								<img src={portfolioIcon} className="logos" alt="logo" />
+								{/* <img src={portfolioIcon} className="logos" alt="logo" /> */}
+								<div>Work</div>
 							</Link>
 							<Link to="education" activeClassName="active" className="IconLinks" smooth={true} offset={-100} duration={100}>
-								<img src={degreeIcon} className="logos" alt="logo" />
+								{/* <img src={degreeIcon} className="logos" alt="logo" /> */}
+								<div>Education</div>
 							</Link>
 							<Link to="skill" activeClassName="active" className="IconLinks" smooth={true} offset={-100} duration={100}>
-								<img src={skillIcon} className="logos" alt="logo" />
-							</Link>
-							{/* <Link
-								to="/"
-								activeClassName="active"
-								className="IconLinks"
-							>
-								<img
-									src={projectIcon}
-									className="logos"
-									alt="logo"
-								/>
-							</Link> */}
-							<Link to="contact" activeClassName="active" className="IconLinks">
-								<img src={callIcon} className="logos" alt="logo" smooth={true} offset={-100} duration={100} />
+								{/* <img src={skillIcon} className="logos" alt="logo" /> */}
+								<div>Skills</div>
 							</Link>
 						</div>
+						<Link to="contact" activeClassName="active" className="IconLinks">
+							<img src={callIcon} className="logos" alt="logo" smooth={true} offset={-100} duration={100} />
+						</Link>
 					</div>
 				</nav>
 			</div>
 
-			<Suspense fallback={<Loading />}>
+			<Suspense fallback={<SkeletonLoading />}>
 				<Home />
 			</Suspense>
-			<Suspense fallback={<Loading />}>
+			<Suspense fallback={<SkeletonLoading />}>
 				<About />
 			</Suspense>
-			<Suspense fallback={<Loading />}>
+			<Suspense fallback={<SkeletonLoading />}>
 				<Skills />
 			</Suspense>
-			<Suspense fallback={<Loading />}>
+			<Suspense fallback={<SkeletonLoading />}>
 				<Project />
 			</Suspense>
-			<Suspense fallback={<Loading />}>
+			<Suspense fallback={<SkeletonLoading />}>
 				<Contact />
 			</Suspense>
-			<Suspense fallback={<Loading />}>
+			<Suspense fallback={<SkeletonLoading />}>
 				<Footer />
 			</Suspense>
 		</div>
 	);
 }
+function SkeletonLoading() {
+	return <Skeleton animation="wave" active />;
+}
+
 function Loading() {
-	return <h2>Loading...</h2>;
+	return (
+		<div className="spinner-container">
+			<div className="spinner"></div>
+			<div className="spinner-text">Portfolio Loading.... </div>
+		</div>
+	);
 }
 
 export default App;

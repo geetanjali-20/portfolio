@@ -35,7 +35,7 @@ const Footer = () => {
 				</div>
 				<div class="main-footer__lower">
 					© Copyright
-					<script>document.write(new Date().getFullYear());</script>2024 . Made by&nbsp;
+					{new Date().getFullYear()} Made by &nbsp;
 					<a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/geetanjali-sharma/01">
 						Geetanjali Sharma
 					</a>

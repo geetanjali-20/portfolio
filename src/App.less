@@ -2,7 +2,8 @@
 .App {
 	text-align: center;
 	overflow-x: hidden;
-	background-color: #fbfaf5;
+
+	// background-color: #fbfaf5;
 }
 
 .App-logo {
@@ -39,7 +40,42 @@
 		transform: rotate(360deg);
 	}
 }
+.spinner-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.7;
+	z-index: 9999;
+	flex-flow: column;
+	gap: 15px;
+	.spinner-text {
+		font-size: 1.8rem;
+		color: #8959f9;
+	}
+}
 
+.spinner {
+	border: 10px solid #ffffff;
+	border-top: 10px solid #8959f9;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
 .navbar {
 	position: fixed;
 	top: 0;
@@ -65,7 +101,8 @@
 
 .navbar-container {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
+	width: 100%;
 	align-items: center;
 	margin: 0 auto;
 	padding: 0 50px;
@@ -79,8 +116,9 @@
 	font-size: 1.5rem;
 	text-decoration: none;
 	.logoimg {
-		width: 30px;
-		border-radius: 50%;
+		width: 85px;
+		margin-top: 20px;
+		// border-radius: 50%;
 	}
 }
 
@@ -90,9 +128,27 @@
 	margin: 0 20px;
 	font-size: 1rem;
 }
+.nav-links{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	a{
+		color: #fff;
+		text-decoration: none;
+		margin: 0 20px;
+		font-size: 1.2rem;
+		font-weight: 500;
+		transition: all 0.3s ease;
+		cursor: pointer;
+		&:hover {
+			text-decoration: none;
+			font-weight: 700;
+		}
+	}
+}
 
 .nav-links a:hover {
-	text-decoration: underline;
+	// text-decoration: underline;
 }
 .HeadingOfAll {
 	font: normal normal normal 44px/50px "Poppins";
@@ -101,7 +157,8 @@
 }
 
 .active {
-	text-decoration: underline;
+	// text-decoration: underline;
+	color: #282c34;
 }
 /* Example styles for the content components */
 .container {

@@ -44,10 +44,22 @@ const Home = () => {
 					</div>
 					<div className="rightHalf">
 						<div className="helloText">
+							<div className="hey">
+								<span class="wave">👋</span>Hey!, I am
+							</div>
 							<Typewriter
 								onInit={(typewriter) => {
-									typewriter.typeString(dataJson["Home"]["MainText1"]).start();
+									typewriter
+										.typeString(dataJson["Home"]["MainText1"])
+										.pauseFor(1500)
+										.deleteAll()
+										.typeString("A Software Developer")
+										.pauseFor(1500)
+										.deleteAll()
+										.typeString(dataJson["Home"]["MainText1"])
+										.start();
 								}}
+								className="mainText"
 							/>
 						</div>
 						<div className="aboutSection">

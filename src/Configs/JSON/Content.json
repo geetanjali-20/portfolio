@@ -1,6 +1,6 @@
 {
 	"Home": {
-		"MainText1": "Hey!, I am Geetanjali Sharma",
+		"MainText1": "Geetanjali Sharma",
 		"MainText2": "A Software Developer",
 		"MainText3": "Geetanjali Sharma",
 		"Socials": [
@@ -28,7 +28,7 @@
 	},
 	"About": {
 		"Title": "About",
-		"Text": "  As a Software Developer 👩‍💻 with 1.5+ years of experience, I’m all about turning ideas into seamless digital experiences. From building dynamic web applications with React.js and TypeScript to diving into the world of AI/ML.💻"
+		"Text": "  As a Software Developer👩‍💻with 2+ years of experience including experience, I’m all about turning ideas into seamless digital experiences. From building dynamic web applications with React.js and TypeScript to diving into the world of AI/ML.💻"
 	},
 	"Experiences": {
 		"Title": "Work Experience",
@@ -76,6 +76,11 @@
 					"name": "ReactJS",
 					"icon": "<i class='devicon-react-original-wordmark colored'></i>"
 				},
+
+				{
+					"name": "NextJs",
+					"icon": "<i class='devicon-nextjs-original-wordmark colored'></i>"
+				},
 				{
 					"name": "JavaScript",
 					"icon": "<i class='devicon-javascript-plain colored'></i>"
@@ -95,10 +100,6 @@
 				{
 					"name": "CSS",
 					"icon": "<i class='devicon-css3-plain-wordmark colored'></i>"
-				},
-				{
-					"name": "Less",
-					"icon": "<i class='devicon-less-plain-wordmark colored'></i>"
 				},
 				{
 					"name": "Django",
@@ -156,10 +157,7 @@
 					"name": "GitHub",
 					"icon": "<i class='devicon-github-original-wordmark colored'></i>"
 				},
-				{
-					"name": "Postman",
-					"icon": "<i class='devicon-postman-plain-wordmark colored'></i>"
-				},
+				
 				{
 					"name": "Jira",
 					"icon": "<i class='devicon-jira-plain-wordmark colored'></i>"
