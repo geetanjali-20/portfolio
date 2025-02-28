@@ -1,8 +1,161 @@
 @import "../variables.less";
 
-.projectSection{
-    margin: 50px 15vw;
+.projectSection {
+	padding: 30px 14vw;
+	background-image: linear-gradient(#6434a9, #46c0cd);
+	.ProjectHeading {
+		font: normal normal 600 48px / 50px "Poppins";
+		color: white;
+		text-transform: uppercase;
+	}
+
+	.projectCards {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		justify-content: flex-start;
+		width: 100%;
+		overflow-x: auto; /* Enable horizontal scrolling */
+		scrollbar-width: none;
+		margin: 35px 0px 25px;
+
+		.projectCard {
+			height: 420px;
+			min-width: 340px;
+			min-height: 420px;
+			max-width: 340px;
+			border: 1px solid #ccc;
+			border-radius: 12px;
+			cursor: pointer;
+			.projectCardHeader {
+				padding: 12px 20px;
+				.MuiCardHeader-avatar {
+					margin-right: 20px;
+				}
+
+				.MuiCardHeader-content {
+					text-align: left;
+					span {
+						font: normal normal 500 22px / 28px "Poppins";
+					}
+				}
+			}
+			.projectImage {
+				width: 100%;
+				height: 220px;
+			}
+			.projectCardContent {
+				padding: 10px 10px 10px 20px;
+				text-align: left;
+				.projectDescription {
+					font: normal normal 300 16px / 20px "Poppins";
+				}
+			}
+			.projectCardActions {
+				display: flex;
+				margin-left: 20px;
+				gap: 30px;
+				justify-content: space-between;
+				margin-right: 20px;
+				.projectLinks {
+					display: flex;
+					gap: 20px;
+					justify-content: center;
+					align-items: center;
+				}
+				.iconImg {
+					width: 30px;
+					height: 30px;
+					cursor: pointer;
+					&:hover {
+						scale: 1.1;
+					}
+				}
+				.linkimg {
+					width: 26px;
+					height: 26px;
+				}
+				.knowMore {
+					cursor: pointer;
+					font: normal normal 500 14px / 20px "Poppins";
+					background-color: #6434a9;
+					padding: 10px;
+					color: white;
+					border-radius: 20px;
+
+					// text-transform: uppercase;
+					&:hover {
+						scale: 1.1;
+					}
+				}
+			}
+		}
+	}
+
+	.projectContainer {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+		.prevButton,
+		.nextButton {
+			background-color: #6434a9;
+			border-radius: 50%;
+			color: white;
+			border: none;
+			padding: 8px;
+			cursor: pointer;
+			margin: 0 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 20px;
+			img {
+				width: 20px;
+				height: 20px;
+			}
+		}
+		.prevButton img {
+			transform: rotate(180deg);
+		}
+
+		.prevButton:hover,
+		.nextButton:hover {
+			background-color: #4b2a7a;
+			scale: 1.1;
+		}
+	}
 }
 
 @media screen and (max-width: @mobile_width) {
+	.projectSection {
+		margin: 0px;
+		padding: 10px 15px;
+
+		.projectCards {
+			display: flex;
+        flex-direction: row;
+        overflow: scroll;
+				margin-top: 25px;
+		}
+		.projectContainer{
+			// display: none;
+			margin-bottom: 20px;
+		}
+		 .ProjectHeading {
+			padding-top: 25px;
+			font: normal normal 600 36px / 40px "Poppins";
+			color: white;
+			text-transform: uppercase;
+	}
+	}
+}
+
+
+@media screen and (max-width: 450px) {
+	.projectSection .projectContainer{
+		display: none;
+		margin-bottom: 0px;
+	}
 }

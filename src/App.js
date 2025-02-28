@@ -1,15 +1,12 @@
+import { Skeleton } from "@mui/material";
 import { Suspense, useEffect, useLayoutEffect, useState } from "react";
 import { Link } from "react-scroll";
 import "./App.less";
 import logo from "./Assests/Logo.png";
-import HomeIcon from "./Assests/NavLinks/img1.png";
-import portfolioIcon from "./Assests/NavLinks/img2.png";
-import degreeIcon from "./Assests/NavLinks/img3.png";
-import skillIcon from "./Assests/NavLinks/img4.png";
 import callIcon from "./Assests/NavLinks/img5.png";
 import { About, Contact, Footer, Home, Project, Skills } from "./Components";
 import AppStore from "./Configs/Store/appStore";
-import { Skeleton } from "@mui/material";
+import ProjectModal from "./Components/ProjectModal";
 
 function App() {
 	const [show, handleShow] = useState(false);
@@ -37,14 +34,25 @@ function App() {
 		// Simulate loading time
 		const timer = setTimeout(() => {
 			setLoading(false);
-		}, 2000); // Adjust the time as needed
+		}, 1500); // Adjust the time as needed
 
 		return () => {
 			window.removeEventListener("scroll", null);
 			clearTimeout(timer);
 		};
 	}, []);
+	function SkeletonLoading() {
+		return <Skeleton active />;
+	}
 
+	function Loading() {
+		return (
+			<div className="spinner-container">
+				<div className="spinner"></div>
+				<div className="spinner-text">Portfolio Loading.... </div>
+			</div>
+		);
+	}
 	if (loading) {
 		return <Loading />;
 	}
@@ -60,20 +68,19 @@ function App() {
 						</Link>
 						<div className="nav-links">
 							<Link to="home" activeClassName="active" className="IconLinks" smooth={true} duration={100}>
-								{/* <img src={HomeIcon} className="logos" alt="logo" /> */}
 								<div>Home</div>
 							</Link>
 							<Link to="work" activeClassName="active" className="IconLinks" smooth={true} offset={-200} duration={100}>
-								{/* <img src={portfolioIcon} className="logos" alt="logo" /> */}
 								<div>Work</div>
 							</Link>
 							<Link to="education" activeClassName="active" className="IconLinks" smooth={true} offset={-100} duration={100}>
-								{/* <img src={degreeIcon} className="logos" alt="logo" /> */}
 								<div>Education</div>
 							</Link>
 							<Link to="skill" activeClassName="active" className="IconLinks" smooth={true} offset={-100} duration={100}>
-								{/* <img src={skillIcon} className="logos" alt="logo" /> */}
 								<div>Skills</div>
+							</Link>
+							<Link to="Project" activeClassName="active" className="IconLinks" smooth={true} offset={-100} duration={100}>
+								<div>Projects</div>
 							</Link>
 						</div>
 						<Link to="contact" activeClassName="active" className="IconLinks">
@@ -101,18 +108,7 @@ function App() {
 			<Suspense fallback={<SkeletonLoading />}>
 				<Footer />
 			</Suspense>
-		</div>
-	);
-}
-function SkeletonLoading() {
-	return <Skeleton animation="wave" active />;
-}
-
-function Loading() {
-	return (
-		<div className="spinner-container">
-			<div className="spinner"></div>
-			<div className="spinner-text">Portfolio Loading.... </div>
+			<ProjectModal/>
 		</div>
 	);
 }

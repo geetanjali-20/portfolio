@@ -1,0 +1,54 @@
+{
+	"Projects": [
+		{
+			"ProjectId": 1,
+			"ProjectName": "Portfolio",
+			"ProjectDescription": "A portfolio website to showcase my skills and projects.",
+			"ProjectDesc": "A Next.js food website showcasing delicious recipes, restaurant reviews, and an intuitive user experience. Built with dynamic routing, server-side rendering, and optimized performance for seamless browsing.",
+			"ProjectLink": "https://geetanjali-20.github.io/portfolio/",
+			"RepositoryLink": "https://github.com/geetanjali-20/portfolio",
+			"ProjectImage": "Project.png",
+			"AvatarColor": "#6434a9"
+		},
+		{
+			"ProjectId": 2,
+			"ProjectName": "NextFood",
+			"ProjectDescription": "NextFood showcases delicious recipes, community reviews.",
+			"ProjectDesc": " NextFood showcases delicious recipes, Community review, and an intuitive user experience. Built with dynamic routing, server-side rendering, and optimized performance for seamless browsing.",
+			"ProjectLink": "https://foodiesproject.vercel.app/",
+			"RepositoryLink": "https://github.com/geetanjali-20/foodies-project",
+			"ProjectImage": "Nextfood.png",
+			"AvatarColor": "#6b412b"
+		},
+		{
+			"ProjectId": 3,
+			"ProjectName": "Sentiment Slider",
+			"ProjectDescription": "A slider bar for Facebook posts shows % of sentiments of a post.",
+			"ProjectDesc": "A slider bar for Facebook posts shows the percentage according to the sentiments of all the post’s comments whether the post is more towards positive, negative, or neutral",
+			"ProjectLink": "https://github.com/geetanjali-20/ML_Projects/tree/main/sentiment%20analysis%20of%20facebook",
+			"RepositoryLink": "https://github.com/geetanjali-20/ML_Projects/tree/main/sentiment%20analysis%20of%20facebook",
+			"ProjectImage": "sentiment.png",
+			"AvatarColor": "#6434a9"
+		},
+		{
+			"ProjectId": 4,
+			"ProjectName": "College Quest",
+			"ProjectDescription": "Developed an AI-based portal to assist students.",
+			"ProjectDesc": "Developed an AI-based portal to assist students in shortlisting top institutes based on user-defined filters such as teacher-student ratio, ratings, results, and location. It utilized authenticated AISHE data to ensure accurate andreliable information and a chatbot for better user interaction.",
+			"ProjectLink": "https://github.com/geetanjali-20/CollegeQuest",
+			"RepositoryLink": "https://github.com/geetanjali-20/CollegeQuest",
+			"ProjectImage": "Project.png",
+			"AvatarColor": "#ff0988"
+		},
+
+		{
+			"ProjectId": 5,
+			"ProjectName": "Weather App",
+			"ProjectDescription": "A weather app that shows the current weather of any city.",
+			"ProjectLink": "https://geetanjalisharma01.github.io/Weather-App/",
+			"RepositoryLink": "https://github.com/geetanjali-20/portfolio",
+			"ProjectImage": "Project.png",
+			"AvatarColor": "#ff0988"
+		}
+	]
+}
