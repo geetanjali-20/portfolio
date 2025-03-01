@@ -1,0 +1,47 @@
+{
+    "Certificates": [
+        {
+            "id": 1,
+            "name": "Career Essentials in Project Management",
+            "description": "Career Essentials in Project Management Certification by Microsoft and LinkedIn",
+            "image":"1.png",
+            "link": "https://drive.google.com/file/d/1qqZ0pfz1-bdScgi7sQLzrXtaZcb9oG0_/view"
+        },
+        {
+            "id": 2,
+            "name": "Gold Developer Title",
+            "description": "Gold Developer Title in eBootathon-4 organized by AKTU and IIT-Kanpur.",
+            "image": "2.png",
+            "link": "https://drive.google.com/file/d/18Zv8rKqiYpi3ztQKZsBmUzMhRlCuAisg/view"
+        },
+        {
+            "id": 3,
+            "name": "TOYCATHON 2021",
+            "description": "Finalist in TOYCATHON 2021 a National-level Hackathon.",
+            "image": "3.png",
+            "link": "https://drive.google.com/file/d/1Q1dpEiBfW_RZ5sD-H4IWuW2VQR7jJbRF/view"
+        },
+        {
+          "id": 4,
+          "name": "Data Science & Machine Learning",
+          "description": "",
+          "image": "4.png",
+          "link": "https://drive.google.com/file/d/1qqZ0pfz1-bdScgi7sQLzrXtaZcb9oG0_/view"
+      },
+      {
+          "id": 5,
+          "name": "HTML, CSS, and Javascript for Web Developers",
+          "description": "",
+          "image": "5.png",
+          "link": "https://drive.google.com/file/d/18Zv8rKqiYpi3ztQKZsBmUzMhRlCuAisg/view"
+      },
+      {
+          "id": 6,
+          "name": "PCAP: Programming Essentials in Python",
+          "description": "Finalist in TOYCATHON 2021 a National-level Hackathon.",
+          "image": "6.png",
+          "link": "https://drive.google.com/file/d/1Q1dpEiBfW_RZ5sD-H4IWuW2VQR7jJbRF/view"
+      }
+    ]
+
+}

@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import "./App.less";
 import logo from "./Assests/Logo.png";
 import callIcon from "./Assests/NavLinks/img5.png";
-import { About, Contact, Footer, Home, Project, Skills } from "./Components";
+import { About, Contact, Footer, Home, Project, Skills, Certificates } from "./Components";
 import AppStore from "./Configs/Store/appStore";
 import ProjectModal from "./Components/ProjectModal";
 
@@ -82,6 +82,12 @@ function App() {
 							<Link to="Project" activeClassName="active" className="IconLinks" smooth={true} offset={-100} duration={100}>
 								<div>Projects</div>
 							</Link>
+							<Link to="Roles" activeClassName="active" className="IconLinks" smooth={true} offset={-100} duration={100}>
+								<div>Positions</div>
+							</Link>
+							<Link to="Certificates" activeClassName="active" className="IconLinks" smooth={true} offset={-100} duration={100}>
+								<div>Certificates</div>
+							</Link>
 						</div>
 						<Link to="contact" activeClassName="active" className="IconLinks">
 							<img src={callIcon} className="logos" alt="logo" smooth={true} offset={-100} duration={100} />
@@ -103,12 +109,15 @@ function App() {
 				<Project />
 			</Suspense>
 			<Suspense fallback={<SkeletonLoading />}>
+				<Certificates />
+			</Suspense>
+			<Suspense fallback={<SkeletonLoading />}>
 				<Contact />
 			</Suspense>
 			<Suspense fallback={<SkeletonLoading />}>
 				<Footer />
 			</Suspense>
-			<ProjectModal/>
+			<ProjectModal />
 		</div>
 	);
 }
