@@ -12,35 +12,36 @@
             "name": "Gold Developer Title",
             "description": "Gold Developer Title in eBootathon-4 organized by AKTU and IIT-Kanpur.",
             "image": "2.png",
-            "link": "https://drive.google.com/file/d/18Zv8rKqiYpi3ztQKZsBmUzMhRlCuAisg/view"
+            "link": "https://drive.google.com/file/d/1Q1dpEiBfW_RZ5sD-H4IWuW2VQR7jJbRF/view"
+            
         },
         {
             "id": 3,
             "name": "TOYCATHON 2021",
             "description": "Finalist in TOYCATHON 2021 a National-level Hackathon.",
             "image": "3.png",
-            "link": "https://drive.google.com/file/d/1Q1dpEiBfW_RZ5sD-H4IWuW2VQR7jJbRF/view"
+            "link": "https://drive.google.com/file/d/18Zv8rKqiYpi3ztQKZsBmUzMhRlCuAisg/view"
         },
         {
           "id": 4,
           "name": "Data Science & Machine Learning",
           "description": "",
           "image": "4.png",
-          "link": "https://drive.google.com/file/d/1qqZ0pfz1-bdScgi7sQLzrXtaZcb9oG0_/view"
+          "link": "https://drive.google.com/file/d/1UvslV9bzWw13LFLPayZUooMCI0In0HwU/view"
       },
       {
           "id": 5,
           "name": "HTML, CSS, and Javascript for Web Developers",
           "description": "",
           "image": "5.png",
-          "link": "https://drive.google.com/file/d/18Zv8rKqiYpi3ztQKZsBmUzMhRlCuAisg/view"
+          "link": "https://drive.google.com/file/d/1N2Vy_FhZnL1wHHRIwZsC95U8YCpWYKnQ/view"
       },
       {
           "id": 6,
           "name": "PCAP: Programming Essentials in Python",
           "description": "Finalist in TOYCATHON 2021 a National-level Hackathon.",
           "image": "6.png",
-          "link": "https://drive.google.com/file/d/1Q1dpEiBfW_RZ5sD-H4IWuW2VQR7jJbRF/view"
+          "link": "https://drive.google.com/file/d/1az_CgqkM6s2OF0ggN08huqYLongfcDRV/view"
       }
     ]
 

@@ -18,7 +18,7 @@ export default function RecipeReviewCard({ project, id }) {
 	};
 	return (
 		<>
-			<Card className="projectCard" key={id} onClick={projectLink}>
+			<Card className="projectCard" key={id}>
 				<CardHeader
 					avatar={
 						<Avatar sx={{ bgcolor: project.AvatarColor }} aria-label="recipe">
@@ -28,7 +28,7 @@ export default function RecipeReviewCard({ project, id }) {
 					className="projectCardHeader"
 					title={project.ProjectName}
 				/>
-				<img src={require(`../Assests/Projects/${project.ProjectImage}`)} alt={project.ProjectName} className="projectImage" />
+				<img src={require(`../Assests/Projects/${project.ProjectImage}`)} alt={project.ProjectName} className="projectImage"  onClick={projectLink}/>
 				<CardContent className="projectCardContent">
 					<Typography variant="body2" className="projectDescription">
 						{project.ProjectDescription}

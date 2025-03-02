@@ -37,17 +37,18 @@
 			"ProjectDesc": "Developed an AI-based portal to assist students in shortlisting top institutes based on user-defined filters such as teacher-student ratio, ratings, results, and location. It utilized authenticated AISHE data to ensure accurate andreliable information and a chatbot for better user interaction.",
 			"ProjectLink": "https://github.com/geetanjali-20/CollegeQuest",
 			"RepositoryLink": "https://github.com/geetanjali-20/CollegeQuest",
-			"ProjectImage": "Project.png",
-			"AvatarColor": "#ff0988"
+			"ProjectImage": "collegeQuest.png",
+			"AvatarColor": "#6b412b"
 		},
 
 		{
 			"ProjectId": 5,
-			"ProjectName": "Weather App",
-			"ProjectDescription": "A weather app that shows the current weather of any city.",
-			"ProjectLink": "https://geetanjalisharma01.github.io/Weather-App/",
-			"RepositoryLink": "https://github.com/geetanjali-20/portfolio",
-			"ProjectImage": "Project.png",
+			"ProjectName": "Netflix Clone",
+			"ProjectDescription": "A sleek and responsive Netflix Clone built with React.js.",
+			"ProjectDesc": "A sleek and responsive Netflix Clone built with React.js, offering a seamless UI experience. The project features a dynamic movie carousel, trailer pop-ups, and a clean user interface.",
+			"ProjectLink": "ttps://github.com/geetanjali-20/NetFlixDummyProject01/tree/master",
+			"RepositoryLink": "https://github.com/geetanjali-20/NetFlixDummyProject01/tree/master",
+			"ProjectImage": "Netflix.png",
 			"AvatarColor": "#ff0988"
 		}
 	]
