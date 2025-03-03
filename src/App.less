@@ -184,17 +184,24 @@
 
 @media screen and (max-width: @mobile_width) {
 	.navbar {
-		background: rgba(255, 255, 255, 0.2);
-		padding-top: 10px;
+		// background: rgba(255, 255, 255, 0.2);
+		background: none;
+		padding-top: 20px;
+
 	}
 	.navbar-container {
-		padding: 0 20px;
-		justify-content: space-around;
+		padding: 0 15px;
+		justify-content: space-between;
+		.logo .logoimg {
+			width: 65px;
+			margin-top: 10px;
+	}
 		.nav-links {
 			display: flex;
 			flex-direction: row;
 			gap: 5%;
 			justify-content: center;
+			display: none;
 			a {
 				margin: 0 10px;
 			}
