@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import purify from "dompurify";
 import "../Styles/Home.less";
 import my from "../Assests/img.jpg";
 import scrollDown from "../Assests/arrow.png";
@@ -64,7 +65,8 @@ const Home = () => {
 						</div>
 						<div className="aboutSection">
 							<div className="aboutTitle">{dataJson["About"]["Title"]}</div>
-							<div className="aboutText">{dataJson["About"]["Text"]}</div>
+								<div className="aboutText" dangerouslySetInnerHTML={{__html:purify.sanitize(dataJson["About"]["Text"])}}></div>
+							{/* <div className="aboutText">{dataJson["About"]["Text"]}</div> */}
 						</div>
 					</div>
 				</div>

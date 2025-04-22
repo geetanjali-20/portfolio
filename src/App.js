@@ -10,7 +10,7 @@ import ProjectModal from "./Components/ProjectModal";
 
 function App() {
 	const [show, handleShow] = useState(false);
-	const [loading, setLoading] = useState(true);
+	// const [loading, setLoading] = useState(true);
 
 	useLayoutEffect(() => {
 		var width = window.screen.width;
@@ -31,31 +31,31 @@ function App() {
 			} else handleShow(false);
 		});
 
-		// Simulate loading time
-		const timer = setTimeout(() => {
-			setLoading(false);
-		}, 1500); // Adjust the time as needed
+		// // Simulate loading time
+		// const timer = setTimeout(() => {
+		// 	setLoading(false);
+		// }, 1500); // Adjust the time as needed
 
 		return () => {
 			window.removeEventListener("scroll", null);
-			clearTimeout(timer);
+			// clearTimeout(timer);
 		};
 	}, []);
 	function SkeletonLoading() {
 		return <Skeleton active />;
 	}
 
-	function Loading() {
-		return (
-			<div className="spinner-container">
-				<div className="spinner"></div>
-				<div className="spinner-text">Portfolio Loading.... </div>
-			</div>
-		);
-	}
-	if (loading) {
-		return <Loading />;
-	}
+	// function Loading() {
+	// 	return (
+	// 		<div className="spinner-container">
+	// 			<div className="spinner"></div>
+	// 			<div className="spinner-text">Portfolio Loading.... </div>
+	// 		</div>
+	// 	);
+	// }
+	// if (loading) {
+	// 	return <Loading />;
+	// }
 
 	return (
 		<div className="App">
