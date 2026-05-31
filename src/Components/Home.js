@@ -46,7 +46,7 @@ const Home = () => {
 					<div className="rightHalf">
 						<div className="helloText">
 							<div className="hey">
-								<span class="wave">👋</span>Hey!, I am
+								<span class="wave">👋</span>Hello, I'm
 							</div>
 							<Typewriter
 								onInit={(typewriter) => {
@@ -54,7 +54,10 @@ const Home = () => {
 										.typeString(dataJson["Home"]["MainText1"])
 										.pauseFor(1500)
 										.deleteAll()
-										.typeString("A Software Developer")
+										.typeString("Product Engineer")
+										.pauseFor(1500)
+										.deleteAll()
+										.typeString("Frontend Developer")
 										.pauseFor(1500)
 										.deleteAll()
 										.typeString(dataJson["Home"]["MainText1"])
@@ -66,7 +69,6 @@ const Home = () => {
 						<div className="aboutSection">
 							<div className="aboutTitle">{dataJson["About"]["Title"]}</div>
 								<div className="aboutText" dangerouslySetInnerHTML={{__html:purify.sanitize(dataJson["About"]["Text"])}}></div>
-							{/* <div className="aboutText">{dataJson["About"]["Text"]}</div> */}
 						</div>
 					</div>
 				</div>

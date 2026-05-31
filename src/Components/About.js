@@ -3,6 +3,7 @@ import purify from "dompurify";
 import dataJson from "../Configs/JSON/Content.json";
 import "../Styles/About.less";
 import logo from "../Assests/CompanyLogo.png";
+import runnlogo from "../Assests/runntv.jpg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import VerticalLinearStepper from "./Stepper";
@@ -12,31 +13,28 @@ const About = () => {
 	return (
 		<>
 			<div className="workExperience" id="work">
-				<div className="firstSection">
-					{/* <div className="companyName">
-						{dataJson["Experiences"]["Company"]}
-					</div> */}
-					<div className="experiences">
-						{dataJson["Experiences"]["Items"].map((item, index) => (
-							<div key={index}>
-								<ul>
-									<li>
-										<h2 className="role">{item.Role}</h2>
-									</li>
-								</ul>
+				<div className="titleExperience HeadingOfAll">
+					{dataJson["Experiences"]["Title"]}
+				</div>
+				<div className="experiences">
+					{dataJson["Experiences"]["Items"].map((item, index) => (
+						<div className="experience">
+							<div key={index} className="firstSection">
 
-								<div className="years">{item.Years}</div>
-								<div className="desc" dangerouslySetInnerHTML={{__html:purify.sanitize(item.Description)}}></div>
+								<div className="sec"><h2 className="role">{item.Role}</h2><div className="years">{item.Years}</div></div>
+								<div className="company">{item.Company}</div>
+
+								<div className="desc" dangerouslySetInnerHTML={{ __html: purify.sanitize(item.Description) }}></div>
 							</div>
-						))}
-					</div>
+							<div className="secondSection">
+								<img src={index === 0 ? runnlogo : logo} className={`LogoImage ${index === 0 ? "runnlogo" : "logo"}`} alt="myImage" />
+							</div>
+						</div>
+					))}
 				</div>
-				<div className="secondSection">
-					<div className="titleExperience HeadingOfAll">
-						{dataJson["Experiences"]["Title"]}
-					</div>
-					<img src={logo} className="LogoImage" alt="myImage" />
-				</div>
+
+
+
 			</div>
 
 			{/* <--   Education Section   -->*/}

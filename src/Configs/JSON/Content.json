@@ -1,7 +1,7 @@
 {
 	"Home": {
 		"MainText1": "Geetanjali Sharma",
-		"MainText2": "A Software Developer",
+		"MainText2": "Frontend Product Engineer",
 		"MainText3": "Geetanjali Sharma",
 		"Socials": [
 			{
@@ -28,20 +28,21 @@
 	},
 	"About": {
 		"Title": "About",
-		"Text": "- A Software Developer with 2+ years of experience in Frontend development. <br/>- I'm all about clean code, clever UI, and chasing that 'aha!' moment. 😌💯<br/>- I’m also deeply curious about AI and Data Science, and continuously explore new tools and technologies to grow as a developer and thinker.💻"
+		"Text": "• Product Engineer with 3+ years of experience delivering scalable frontend solutions across CMS platforms, analytics dashboards, and customer-facing applications. </br> • Experienced in React.js, Next.js, TypeScript, and modern frontend architecture, with a strong focus on performance, usability, and maintainability. </br> • Continuously exploring AI and emerging technologies to build smarter, more impactful digital products."
 	},
 	"Experiences": {
 		"Title": "Work Experience",
-		"Company": "DePronto Infotech Ltd.",
 		"Items": [
 			{
-				"Role": "Software Engineer - Product | Runn Media Labs",
+				"Role": "Software Engineer - Product",
 				"Years": "[June 2025 - Present]",
+				"Company": "Runn Media Labs",
 				"Description": "<ol><li>Owned the development and enhancement of core products including PlayStudio CMS, Analytics Dashboard, AdStudio, and customer-facing web applications.</li><li>Developed the Analytics Dashboard, enabling clients to monitor content performance, engagement, and operational metrics through interactive visualizations.</li><li>Led the development of RunnTV’s official website using Next.js, integrating Video.js, ad solutions, andanalytics tracking while ensuring responsiveness and SEO optimization</li><li>Implemented the Overlay Editor feature, enabling dynamic management of overlays and secondary content experiences.</li><li>Collaborated closely with product, backend, and QA teams to deliver scalable, user-centric solutions while contributing to reusable frontend architecture and application performance improvements</li></ol>"
 			},
 			{
-				"Role": "Software Developer | DePronto Infotech Ltd.",
+				"Role": "Software Developer",
 				"Years": "[Dec 2022 - March 2025]",
+				"Company": "DePronto Infotech Ltd.",
 				"Description": "<ol><li>Developed and maintained secure, SEO-friendly web applications for leading insurance and financial services clients using React.js, JavaScript, and jQuery.</li><li>Worked on middleware-integrated features and authentication workflows that strengthened application security and contributed to a 40% reduction in security vulnerabilities</li><li>Implemented frontend solutions for customer onboarding journeys, including eKYC and CKYC workflows, improving user experience and compliance processes for insurance platforms.</li><li>Delivered responsive, cross-browser compatible, production-grade applications while collaborating with cross-functional teams in an Agile development environment</li></ol>"
 			}
 		]

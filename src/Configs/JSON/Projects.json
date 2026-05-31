@@ -3,7 +3,7 @@
 		{
 			"ProjectId": 1,
 			"ProjectName": "Moodify",
-			"ProjectDescription": "AI-driven recommendation system that uses sentiment analysis to understand user emotions",
+			"ProjectDescription": "A Mood-Based Content Recommendation System",
 			"ProjectDesc": "Built an AI-driven recommendation system that uses sentiment analysis to understand user emotions and delivers personalized quotes, music, videos, and articles. Integrated sentiment analysis, mood tracking, and interactive visualizations to provide personalized insights and enabling users to monitor emotional trends that enhanced user engagement.",
 			"ProjectLink": "",
 			"RepositoryLink": "",
