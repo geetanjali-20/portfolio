@@ -10,8 +10,8 @@ const VerticalLinearStepper = () => {
       <section>
       <img class="icon" src={CheckedIcon} alt='check'/>
         <div class="details">
-          <span class="title">Minor in Artificial Intelligence(AI)</span>
-          <span>2024-Present</span>
+          <span class="title">Major in Artificial Intelligence</span>
+          <span>2024-2026</span>
         </div>
         <p>Indian Institute of Technology Ropar (IIT Ropar)</p>
         <div class="bottom">

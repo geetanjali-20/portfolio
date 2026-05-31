@@ -2,6 +2,16 @@
 	"Projects": [
 		{
 			"ProjectId": 1,
+			"ProjectName": "Moodify",
+			"ProjectDescription": "AI-driven recommendation system that uses sentiment analysis to understand user emotions",
+			"ProjectDesc": "Built an AI-driven recommendation system that uses sentiment analysis to understand user emotions and delivers personalized quotes, music, videos, and articles. Integrated sentiment analysis, mood tracking, and interactive visualizations to provide personalized insights and enabling users to monitor emotional trends that enhanced user engagement.",
+			"ProjectLink": "",
+			"RepositoryLink": "",
+			"ProjectImage": "moodify.png",
+			"AvatarColor": "#55acee"
+		},
+		{
+			"ProjectId": 2,
 			"ProjectName": "World Atlas",
 			"ProjectDescription": "A modern, interactive world atlas - 'Discover the World Beyond Borders.'",
 			"ProjectDesc": "A modern, interactive world atlas designed to help you discover countries, capitals, landmarks, and more with 3D revolving earth view which make it Perfect for students, travelers, and curious minds eager to learn and explore more about our planet. This website is a combination of impressive UI with Knowledge.",
@@ -11,7 +21,7 @@
 			"AvatarColor": "#3c791e"
 		},
 		{
-			"ProjectId": 2,
+			"ProjectId": 3,
 			"ProjectName": "Portfolio",
 			"ProjectDescription": "A portfolio website to showcase my skills and projects.",
 			"ProjectDesc": "Developed a dynamic and responsive portfolio website using React.js to showcase my projects, skills, and professional experience. The website features an interactive user interface with smooth animations and transitions, which enhances the user experience.",
@@ -21,7 +31,7 @@
 			"AvatarColor": "#6434a9"
 		},
 		{
-			"ProjectId": 3,
+			"ProjectId": 4,
 			"ProjectName": "NextFood",
 			"ProjectDescription": "NextFood showcases delicious recipes, community reviews.",
 			"ProjectDesc": " NextFood showcases delicious recipes, Community review, and an intuitive user experience. Built with dynamic routing, server-side rendering, and optimized performance for seamless browsing.",
@@ -31,7 +41,7 @@
 			"AvatarColor": "#6b412b"
 		},
 		{
-			"ProjectId": 4,
+			"ProjectId": 5,
 			"ProjectName": "Sentiment Slider",
 			"ProjectDescription": "A slider bar for Facebook posts shows % of sentiments of a post.",
 			"ProjectDesc": "A slider bar for Facebook posts shows the percentage according to the sentiments of all the post’s comments whether the post is more towards positive, negative, or neutral",
@@ -41,7 +51,7 @@
 			"AvatarColor": "#6434a9"
 		},
 		{
-			"ProjectId": 5,
+			"ProjectId": 6,
 			"ProjectName": "College Quest",
 			"ProjectDescription": "Developed an AI-based portal to assist students.",
 			"ProjectDesc": "Developed an AI-based portal to assist students in shortlisting top institutes based on user-defined filters such as teacher-student ratio, ratings, results, and location. It utilized authenticated AISHE data to ensure accurate andreliable information and a chatbot for better user interaction.",
@@ -52,7 +62,7 @@
 		},
 
 		{
-			"ProjectId": 6,
+			"ProjectId": 7,
 			"ProjectName": "Netflix Clone",
 			"ProjectDescription": "A sleek and responsive Netflix Clone built with React.js.",
 			"ProjectDesc": "A sleek and responsive Netflix Clone built with React.js, offering a seamless UI experience. The project features a dynamic movie carousel, trailer pop-ups, and a clean user interface.",
